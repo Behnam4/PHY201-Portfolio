@@ -113,8 +113,8 @@
     \end{eqnarray*}
 
     % Answer 
-    \noindent\rule{16cm}{0.4pt}
-    
+    \rule{16cm}{0.4pt}
+
     $
       det(A)=
       (3)(-1)^{1+1}
@@ -147,7 +147,7 @@
 
     \emph{Matrix A is singular therefore it is NOT invertible.}
 
-    \noindent\rule{16cm}{0.4pt}
+    \rule{16cm}{0.4pt}
 
     \bigbreak
 
@@ -183,7 +183,7 @@
 
     \emph{Matrix B is invertible.}
 
-    \noindent\rule{16cm}{0.4pt}
+    \rule{16cm}{0.4pt}
 
     \bigbreak
 
@@ -214,12 +214,12 @@
 
     $\Rightarrow$ 
     $
-    det(C)= 54
+      det(C)= 54
     $
 
     \emph{Matrix C is invertible.}
 
-    \noindent\rule{16cm}{0.4pt}
+    \rule{16cm}{0.4pt}
 
     \bigbreak
 
@@ -265,7 +265,7 @@
 
     $\Rightarrow$ 
     $
-    det(D)= 120
+      det(D)= 120
     $
 
     \emph{Matrix D is invertible.}
@@ -274,6 +274,43 @@
 
   \item Continue the previous exercise: for the matrices that have non-vanishing determinants, compute the inverses using a method of your choice (5 points for each inverse calculation). 
 
+    \emph{The adjoint of a matrix is the transpose of the cofactor matrix of that matrix.}
+    
+    $B=
+      \begin{pmatrix}
+        6 & -2 & 3 \\ 
+        1 & 1 & 1 \\ 
+        2 & -3 & 1
+      \end{pmatrix}
+      ,
+      adj(B)=
+      \begin{pmatrix}
+       4 & 1 & -5 \\
+       -7 & 0 & 14 \\
+       -5 & -3 & 8
+      \end{pmatrix}^T
+      ,
+      det(B)=7
+    $
+
+    $B^{-1}= \dfrac{adj(B)}{det(B)}=\dfrac{
+      \begin{pmatrix}
+        4 & -7 & -5 \\
+        1 & 0 & -3 \\
+        -5 & 14 & 8
+       \end{pmatrix}
+    }{7}
+    =
+    \begin{pmatrix}
+      \dfrac{4}{7} & -1 & \dfrac{-5}{7} \\
+      \dfrac{1}{7} & 0 & \dfrac{-3}{7} \\
+      \dfrac{-5}{7} & 2 & \dfrac{8}{7}
+     \end{pmatrix}
+    $
+
+    \rule{16cm}{0.4pt}
+
+    Start from here Behnam
 
   
   \item  Consider the following vectors (column matrices):
