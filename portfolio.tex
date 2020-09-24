@@ -77,20 +77,20 @@
 
 \pagebreak
 
-
+%  Table of contents
 \begin{singlespace}
   \begin{tabular}{ |p{3cm}|||p{4cm}|p{2cm}|p{2cm}|p{2cm}|  }
       \hline
       Topic & Assignment & Page & Point Value & Points Earned \\
       \hline
-      Complex numbers & \cellcolor{orange} Problems/Other & \cellcolor{orange} ... &\cellcolor{orange}  ... &\cellcolor{orange}  ... \\
-      & \cellcolor{orange} Exercises &\cellcolor{orange}  ... &\cellcolor{orange}  ... &\cellcolor{orange}  ... \\
+      Complex numbers & \cellcolor{orange} Problems/Other & \cellcolor{orange} 3 &\cellcolor{orange}  ... &\cellcolor{orange}  ... \\
+      & \cellcolor{orange} Exercises &\cellcolor{orange}  8 &\cellcolor{orange}  ... &\cellcolor{orange}  ... \\
       \hline
-      Vectors & Problems/Other & ... & ... & ... \\
-      & Exercises & ... & ... & ... \\
+      Vectors & Problems/Other & 11 & ... & ... \\
+      & Exercises & 13 & ... & ... \\
       \hline
       Matrcies & \cellcolor{orange} Problems/Other &\cellcolor{orange}  ... &\cellcolor{orange}  ... & \cellcolor{orange} ... \\
-      & \cellcolor{orange} Exercises &\cellcolor{orange}  ... &\cellcolor{orange}  ... &\cellcolor{orange}  ... \\
+      & \cellcolor{orange} Exercises &\cellcolor{orange}  16 &\cellcolor{orange}  ... &\cellcolor{orange}  ... \\
       \hline
       Fourier Series & Problems/Other & ... & ... & ... \\
       & Exercises & ... & ... & ... \\
@@ -115,8 +115,328 @@
 
 \emph{ Important reminder: to get full credit, all calculations must be done by hand, without using electronic devices. Steps must be reasonably detailed.  The use of electronic devices is allowed, but must be explicitly declared, and will result in partial credit. See syllabus for details. Also see syllabus for rules on collaborating with others on a problem. } 
 
-\textbf{Exercises set on matrices}
+% Complex number start 
 
+\textbf{Problem set on Complex Numbers}
+
+\begin{enumerate}
+
+  \item  Solve the equation  $z^7-4z^6+6z^5-6z^4+6z^3-12z^2+8z+4=0,$
+
+    \begin{enumerate}
+      \item By examining the effect of setting $z^3$ equal to $2,$ and then 
+      \item By factorising and using the binomial expansion of $(z+a)^4$
+
+      \bigbreak
+
+      Plot the seven roots of the equation on an Argand plot, exemplifying that complex roots of a polynomial equation always occur in conjugate pairs if the polynomial has real coefficients
+    \end{enumerate}
+
+  
+  (Note: because the results are given at the end of the chapter, most of the  credit will be given for steps. ) 
+  
+  [Hint:  show that it is possible to factorize the equation as follows: $(z^3-2)(a z^4 + b z^3 + c z^2 + d z + e)=0$, with $a,b,c,d,e$ to be found. ]
+  
+  \item  Use de Moivre’s theorem with $n=4$ to prove that
+
+  $cos(4\theta)=8cos^4(\theta)-8cos^2(\theta)+1$
+
+  and deduce that 
+
+  $cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$.
+
+  \bigbreak
+
+  \bigbreak
+
+
+    $[cos(\theta)+isin(\theta)]^4=cos(4\theta)+isin(4\theta)$
+
+    \emph{L.H.S:}
+
+    $[cos(\theta)+isin(\theta)]^4=[cos(\theta)+isin(\theta)]^2.[cos(\theta)+isin(\theta)]^2$
+
+    $=[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)].[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)]$
+
+    $=(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta)).(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta))$
+
+    \bigbreak
+
+    $=cos^4(\theta)-cos^2(\theta)sin^2(\theta)+2icos^3(\theta)sin(\theta)-sin^2(\theta)cos^2(\theta)+sin^4(\theta)-2icos(\theta)sin^3(\theta)+2icos^3(\theta)sin(\theta)-2icos(\theta)sin^3(\theta)-4cos^2(\theta)sin^2(\theta)$
+
+    \bigbreak
+
+    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+4icos^3(\theta)sin(\theta)-4icos(\theta)sin^3(\theta)$
+
+    \bigbreak
+
+    $\longrightarrow$ L.H.S: $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]$ 
+
+    \bigbreak
+
+    \emph{L.H.S = R.H.S}
+
+    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]=cos(4\theta)+isin(4\theta)$ 
+
+    \bigbreak
+
+    $\longrightarrow$ $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)sin^2(\theta)+sin^4(\theta)$
+
+    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)[1-cos^2(\theta)]+[1-cos^2(\theta)]^2$
+
+    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)+6cos^4(\theta)+1-2cos^2(\theta)+cos^4(\theta)$
+
+    $cos(4\theta)=8cos^4(\theta)-8cos^2(\theta)+1$ \thinspace \thinspace \thinspace  $\boxed{}$
+
+
+    \bigbreak
+
+
+    $cos(\dfrac{\pi}{8})=cos(4\dfrac{\pi}{32})=8cos^4(\dfrac{\pi}{32})-8cos^2(\dfrac{\pi}{32})+1$
+
+    From trigonometry we know that $cos(\dfrac{\theta}{2})=\sqrt{\dfrac{1+cos(\theta)}{2}}$
+
+    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})$ and $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})$
+
+    $cos(\dfrac{\pi}{8})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{4})}{2}}=\dfrac{\sqrt{2+\sqrt{2}}}{2}$
+
+    $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{8})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2}$
+
+    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{16})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}{2}$
+
+    \bigbreak
+
+    Let $cos(\dfrac{\pi}{32})=K$
+
+    \bigbreak
+
+    $8K^4-8K^2+1=(\dfrac{2+\sqrt{2}}{4})^{1/2}$
+
+    Since $cos(\dfrac{\pi}{8})=8K^4-8K^2+1$ $\Longrightarrow cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$ 
+
+
+  
+  \item  In the theory of special relativity, the relationship between the position and time coordinates of an event, as measured in two frames of reference that have parallel $x-$ axes, can be expressed in terms of hyperbolic functions. If the coordinates are $x$ and $t$ in one frame and $x^\prime$ and $t^\prime$ in the other, then the relationship take the form
+  
+  $x^\prime=x cosh(\phi)-ct sinh(\phi),$
+  
+  $ct^\prime=-xsinh(\phi)+ct cosh(\phi)$.
+
+  Express $x$ and $ct$ in terms of $x^\prime, ct^\prime$ and $\phi$ and show that 
+
+  $x^2-(ct)^2=(x^\prime)^2-(ct^\prime)^2$
+  
+  \item The principal value of the logarithmic function of a complex variable is defined to have its argument in the range $-\pi < arg z\leq \pi $. By writting $z=tan(w)$ in terms of exponentials show that
+
+  $tan^{-1}(z)=\dfrac{1}{2i} \ln(\dfrac{1+iz}{1-iz})$.
+
+  Use this result to evaluate
+
+  $tan^{-1}(\dfrac{2\sqrt{3}-3i}{7})$.
+  
+\end{enumerate}
+
+% End of "Problem set on Complex Numbers"
+
+\pagebreak
+
+\textbf{Exercises set on Complex Numbers}
+
+\begin{enumerate}
+
+  \item  Perform  the following computations, reducing the result to
+  standard $a+ib$ form for complex numbers: 
+  \[
+  \begin{array}{lll}
+  13.\,\frac{\textstyle 1+i}{\textstyle 1-i} & 14.\,\frac{\textstyle 2+i}{\textstyle i-1} & 15.\,\frac{\textstyle 4+5i}{\textstyle 5-3i} \\ 
+  16.\,\frac{\textstyle 2+i}{\textstyle 3+2i}+\left( \frac{\textstyle i+4}{\textstyle 5i}\right)^{\ast} & 17.\,\frac{\textstyle i}{\textstyle 1+i}-\frac{\textstyle 1+i}{\textstyle i} & 18.\,\frac{\textstyle 3+5i}{\textstyle 5+3i}+4
+  \end{array}
+  \]
+  
+  13. $\dfrac{1+i}{1-i}=(\dfrac{1+i}{1-i}).(\dfrac{1+i}{1+i})=\dfrac{1+2i+i^2}{1-i^2}=0+i$
+
+  \bigbreak
+  
+  14. $\dfrac{2+i}{i-1}=(\dfrac{2+i}{i-1}).(\dfrac{i+1}{i+1})=\dfrac{2i+2+i^2+i}{i^2-1^2}=-(\dfrac{1}{2}+i\dfrac{3}{2})$
+
+  \bigbreak
+
+  15. $\dfrac{4+5i}{5-3i}=(\dfrac{4+5i}{5-3i}).(\dfrac{5+3i}{5+3i})=\dfrac{20+12i+25i+15i^2}{5^2-(3i)^2}=\dfrac{5}{34}+i\dfrac{37}{34}$
+
+  \bigbreak
+
+  16. $\dfrac{2+i}{3+2i}+(\dfrac{i+4}{5i})^*=\dfrac{2+i}{3+2i}+\dfrac{4-i}{-5i}=\dfrac{-5i(2+i)+(4-i)(3+2i)}{-5i(3+2i)}$
+
+  $=\dfrac{19-5i}{10-15i}=(\dfrac{19-5i}{10-15i}).(\dfrac{10+15i}{10+15i})=\dfrac{190+285i-50i-75i^2}{10^2-(15i)^2}$
+
+  $=\dfrac{265+235i}{325}=\dfrac{53}{65}+i\dfrac{47}{65}$
+
+  \bigbreak
+
+  17. $\dfrac{i}{1+i}-\dfrac{1+i}{i}=\dfrac{i^2-(1+i)^2}{(1+i)i}=\dfrac{i^2-(1+2i+i^2)}{i+i^2}=\dfrac{-1-2i}{-1+i}$
+
+  $=(\dfrac{-1-2i}{-1+i}).(\dfrac{-1-i}{-1-i})=\dfrac{-1-i+2i+2i^2}{(-1)^2-(i)^2}=\dfrac{-1-i+2i-2}{1+1}$
+
+  $=\dfrac{-3}{2}+i\dfrac{1}{2}$
+
+  18. $\dfrac{3+5i}{5+3i}+4=\dfrac{3+5i+20+12i}{5+3i}=\dfrac{23+17i}{5+3i}$
+
+  $=(\dfrac{23+17i}{5+3i}).(\dfrac{5-3i}{5-3i})=\dfrac{115-69i+85i-51i^2}{5^2-(3i)^2}$
+
+  $=\dfrac{166+16i}{25+9}=\dfrac{83}{17}+i\dfrac{8}{17}$
+  
+  \item Perform the following calculations using the Euler (polar) form for \underline{each of the complex numbers} involved (in other words: take each number and transform it into polar form. Then, execute the operation given.).
+  \[
+  \begin{array}{lll}
+  1.\;\left( 1+i\right) \left( 1-i\right)  & 2.\;\frac{\textstyle 1+i}{\textstyle 1+i\sqrt{3}} & 3.\;i\left( 3+4i\right)  \\ 
+  4.\;\frac{\textstyle 1-3i}{\textstyle i} & 5.\;\frac{\textstyle 1+i}{\textstyle \sqrt{2}}\cdot \left( 1+i\sqrt{3}\right)  & 6.\;\left( 1+i\right) ^{5}
+  \end{array}
+  \]
+  
+  \item Express the following quantities in Cartesian $\left(x+iy\right) $ form and Euler $\left( re^{i\theta}\right)$ form. Indicate where there are multiple values.
+  
+  \begin{enumerate}
+    \item $\exp \left( 1+i\sqrt{3}\right)$
+    
+    \item $\cos \left( 1+i\right)$
+    
+    \item $\sin \left( 1+i\right)$
+    
+    \item $\ln (2i)$
+    
+    \item $\ln \left( 1-i\pi \right)$
+    
+    \item $\cosh \left( 1+i\pi \right)$
+  \end{enumerate}
+  
+  \item Compute the following roots and rational powers. Be sure to find all the solutions and plot them on an Argand plane. 
+  \[
+  \begin{array}{lll}
+  1.\;i^{1/2} & 2.\;\left( -i\right) ^{1/2} & 3.\;2^{1/3} \\ 
+  4.\;2^{2/3} & 5.\;(1+i\sqrt{3})^{3/5} & 6.\;\left( 1-i\right) ^{-2/3}
+  \end{array}
+  \]
+  \end{enumerate}
+
+% End of "Exercises set on Complex Numbers"
+
+\pagebreak
+
+% Complex numbers end
+
+
+% Vectors start 
+
+\textbf{Problem set on Vectors}
+
+\begin{enumerate}
+
+  \item  The plane $P_1$ contains the points $A$, $B$ and $C$, which have position vectors $a = −3i + 2j, b = 7i + 2j$ and $c = 2i + 3j + 2k$, respectively. Plane $P_2$ passes through $A$ and is orthogonal to the line $BC$, whilst plane $P_3$ passes through $B$ and is orthogonal to the line $AC$. Find the coordinates of $r$, the point of intersection of the three planes.
+  
+  \item  Two fixed points, $A$ and $B$, in three-dimensional space have position vectors $a$ and $b$. Identify the plane $P$ given by \\
+  $(a-b).r=\dfrac{1}{1}(a^2-b^2)$, where $a$ and $b$ are the magnitudes of \textbf{a} and \textbf{b}. Show also that the equation $(a-r).(b-r)=0$ describes a sphere $S$ of radius $\dfrac{|a − b|}{2}$. Deduce that the intersection of $P$ and $S$ is also the intersection of two spheres, centred on $A$ and $B$, and each of radius $\dfrac{|a − b|}{\sqrt{2}}$.
+  
+  \item  Let $O$, $A$, $B$ and $C$ be four points with position vectors $O, a, b$ and $c$ and denoted by $g=\lambda a+ \mu b+\nu c$ the position of the centre of the sphere on which they all lie.
+  
+  
+    \begin{enumerate}
+      \item Prove that $\lambda, \mu$ and $\nu$ simultaneously satisfy
+
+      $(a.a)\lambda + (a.b) \mu+ (a.c)\nu = \dfrac{1}{2} a^2$
+
+      and two other similar equations. 
+      
+      \item By making a change of origin, find the centre and radius of the sphere on which the points $p=3i+j−2k, q=4i+3j−3k,$ $r=7i−3k$ and $s=6i+j−k$ all lie.
+    \end{enumerate}  
+  
+  \item  The vectors $a, b$ and $c$ are coplanar and related by
+
+  $\lambda a+\mu b+\nu c=0,$
+  
+  where $\lambda, \mu, \nu$ are not all zero. Show that the condition for the points with position vectors $\alpha a, \beta b$ and $\gamma c$ to be collinear is 
+
+  $\dfrac{\lambda}{\alpha}+\dfrac{\mu}{\beta}+\dfrac{\nu}{\mu}=0$
+
+  \item  Using vector methods:
+
+  \begin{enumerate}
+    \item Show that the line of intersection of the planes $x+2y+3z=0$ and $3x+2y+z=0$ is equally inclined to the $x-$ and $z-$ axes and makes an angle $cos^{-1}(\dfrac{-2}{\sqrt{6}})$ with the $y-axis$.
+    
+    \item Find the perpendicular distance between one corner of a unit cube and the major diagonal not passing through it.
+  \end{enumerate} 
+  
+\end{enumerate}
+
+\pagebreak
+
+
+\textbf{Exercises set on Vectors}
+
+\begin{enumerate}
+
+  \item You are given the following vectors in terms of their components in
+  the $\left\{ \mathbf{\hat{x}},\,\mathbf{\hat{y}},\mathbf{\, \hat{z}}\right\} $ basis: 
+  \[
+  \mathbf{A}=\mathbf{\hat{x}}+2\mathbf{\hat{y}-}2\mathbf{\hat{z}, \quad \quad B}=3\mathbf{\hat{x}}+\mathbf{\hat{y}+}2\mathbf{\hat{z}, \quad \quad C}=4\mathbf{\hat{x}}-\mathbf{\hat{y}+\hat{z}.}
+  \]
+  Take $\theta_{\rm AC}$ to be the angle between vectors $\mathbf{A}$ and $\mathbf{C}$, etc. 
+  
+  \begin{enumerate}
+    \item Prove that these vectors are linearly independent. 
+    
+    %\item compute $A,\;B$ and $C.$ (\emph{i.e.}, $A=\left| \mathbf{A}\right| $, etc.)
+    
+    %\item compute $2\mathbf{A}+\mathbf{B},\;3\mathbf{C}-\mathbf{B,\;A}+\mathbf{B+C}$
+    
+    %\item compute $\mathbf{A\cdot B,\;A\cdot C}$ and $\mathbf{B\cdot C}$
+    
+    \item Compute  $\mathbf{A\times B,\;A\times C}$ and $\mathbf{B\times C}$
+    
+    \item Compute (by hand) $\cos \theta_{\rm AB},\,\cos \theta_{\rm AC},\,\cos \theta_{\rm BC}$
+    
+    \item Compute (by hand) $\sin \theta_{\rm AB},\,\sin \theta_{\rm AC},\,\sin \theta_{\rm BC}$
+    
+    \item Compute $\mathbf{A\cdot }\left( \mathbf{B\times C}\right) ,\;\mathbf{B\cdot }\left( \mathbf{A\times C}\right) $ and $\mathbf{C\cdot }\left( \mathbf{A\times B}\right)$
+    
+    \item Compute $\left( \mathbf{A\times B}\right) \times \mathbf{C+}\left( \mathbf{B\times C}\right) \times \mathbf{A+}\left( \mathbf{C\times A}\right) \times \mathbf{B}$
+  \end{enumerate}
+  
+  
+  \item Find an equation of the plane through the points $\left(
+  0,\,0,\,3\right) ,\;\left( 1,\,1,\,1\right) $ and $\left( -1,\,1,\,2\right) $.
+  
+  \item Find the equation of the plane that contains the point $\left(
+  2,\,1,\,-4\right) $ and is perpendicular to the vector $3\mathbf{\hat{x}}-2\mathbf{\hat{y}}+\mathbf{\hat{z}}.$
+  
+  \item Determine $b$ such that the line through $\left( 5,\,0,\,3\right) $ and $\left( -1,\,-10,\,b\right) $ will be perpendicular to $\left( \mathbf{\hat{x}+\hat{y}}\right) \mathbf{\times }\left( \mathbf{\hat{x}+\hat{z}}\right)$.
+  
+  \item Use vectors to find the equation of the straight line containing the points $\left( 1,\,-2,\,4\right) $ and $\left( 6,\,1,\,1\right) .$ Write this equation in \emph{parametric form}, {\it i.e.}, in the form $\mathbf{r}= \mathbf{r}_{0}+t\mathbf{V}$, where $\mathbf{r}_{0}$ is the vector describing a given point on the line, $\mathbf{V}$ is a vector oriented along the line, and $t$ is a variable that has range $\left( -\infty ,\,\infty \right)$. 
+  
+  \item Find the vector(s) having modulus equal to $\sqrt{13}$, which are orthogonal to the $y$-axis and parallel to the plane $3x - 2z -5=0$.
+  
+  \item Considerate the lines $r$ and $s$, given by the  equations: 
+  \begin{equation}
+  r: 
+  \begin{cases} x-2= 0 \\ z+y=0    \end{cases} ; ~~~~~~   s: \begin{cases} x = t - 2  \\ y=t \\ 2t- 1   \end{cases}   
+  \end{equation}
+  %\end{equation}
+  Establish if it is possible to find a point $R$ located on $r$, and a point $S$ located on $s$, so that the line passing by $R$ and $S$ 
+  is parallel to the planes 
+  $\alpha : x - 3z + 2 = 0$ and  $\beta : 2x - y = 1$.
+  
+  \item 
+  %Fis, i, j, k, determinare equazioni parametriche della retta passante per P = (1, 3, 0), parallela al piano yz e al piano $x + y + z = 0$.
+  
+  Find a parametric equation describing the line passing by the point $P = (1, 3, 0)$, and parallel to both the $x=0$ plane (i.e., the $yz$ plane) and the plane $x + y + z = 0$. 
+  
+  \end{enumerate}
+% End of "Exercises set on Vectors"
+
+\pagebreak
+
+
+
+\textbf{Exercises set on matrices}
 
 \begin{enumerate}
 
@@ -673,289 +993,9 @@
 \end{enumerate}
 % End of "Exercises set on matrices"
 
-\pagebreak
-
-\textbf{Exercises set on Vectors}
-
-\begin{enumerate}
-
-  \item You are given the following vectors in terms of their components in
-  the $\left\{ \mathbf{\hat{x}},\,\mathbf{\hat{y}},\mathbf{\, \hat{z}}\right\} $ basis: 
-  \[
-  \mathbf{A}=\mathbf{\hat{x}}+2\mathbf{\hat{y}-}2\mathbf{\hat{z}, \quad \quad B}=3\mathbf{\hat{x}}+\mathbf{\hat{y}+}2\mathbf{\hat{z}, \quad \quad C}=4\mathbf{\hat{x}}-\mathbf{\hat{y}+\hat{z}.}
-  \]
-  Take $\theta_{\rm AC}$ to be the angle between vectors $\mathbf{A}$ and $\mathbf{C}$, etc. 
-  
-  \begin{enumerate}
-    \item Prove that these vectors are linearly independent. 
-    
-    %\item compute $A,\;B$ and $C.$ (\emph{i.e.}, $A=\left| \mathbf{A}\right| $, etc.)
-    
-    %\item compute $2\mathbf{A}+\mathbf{B},\;3\mathbf{C}-\mathbf{B,\;A}+\mathbf{B+C}$
-    
-    %\item compute $\mathbf{A\cdot B,\;A\cdot C}$ and $\mathbf{B\cdot C}$
-    
-    \item Compute  $\mathbf{A\times B,\;A\times C}$ and $\mathbf{B\times C}$
-    
-    \item Compute (by hand) $\cos \theta_{\rm AB},\,\cos \theta_{\rm AC},\,\cos \theta_{\rm BC}$
-    
-    \item Compute (by hand) $\sin \theta_{\rm AB},\,\sin \theta_{\rm AC},\,\sin \theta_{\rm BC}$
-    
-    \item Compute $\mathbf{A\cdot }\left( \mathbf{B\times C}\right) ,\;\mathbf{B\cdot }\left( \mathbf{A\times C}\right) $ and $\mathbf{C\cdot }\left( \mathbf{A\times B}\right)$
-    
-    \item Compute $\left( \mathbf{A\times B}\right) \times \mathbf{C+}\left( \mathbf{B\times C}\right) \times \mathbf{A+}\left( \mathbf{C\times A}\right) \times \mathbf{B}$
-  \end{enumerate}
-  
-  
-  \item Find an equation of the plane through the points $\left(
-  0,\,0,\,3\right) ,\;\left( 1,\,1,\,1\right) $ and $\left( -1,\,1,\,2\right) $.
-  
-  \item Find the equation of the plane that contains the point $\left(
-  2,\,1,\,-4\right) $ and is perpendicular to the vector $3\mathbf{\hat{x}}-2\mathbf{\hat{y}}+\mathbf{\hat{z}}.$
-  
-  \item Determine $b$ such that the line through $\left( 5,\,0,\,3\right) $ and $\left( -1,\,-10,\,b\right) $ will be perpendicular to $\left( \mathbf{\hat{x}+\hat{y}}\right) \mathbf{\times }\left( \mathbf{\hat{x}+\hat{z}}\right)$.
-  
-  \item Use vectors to find the equation of the straight line containing the points $\left( 1,\,-2,\,4\right) $ and $\left( 6,\,1,\,1\right) .$ Write this equation in \emph{parametric form}, {\it i.e.}, in the form $\mathbf{r}= \mathbf{r}_{0}+t\mathbf{V}$, where $\mathbf{r}_{0}$ is the vector describing a given point on the line, $\mathbf{V}$ is a vector oriented along the line, and $t$ is a variable that has range $\left( -\infty ,\,\infty \right)$. 
-  
-  \item Find the vector(s) having modulus equal to $\sqrt{13}$, which are orthogonal to the $y$-axis and parallel to the plane $3x - 2z -5=0$.
-  
-  \item Considerate the lines $r$ and $s$, given by the  equations: 
-  \begin{equation}
-  r: 
-  \begin{cases} x-2= 0 \\ z+y=0    \end{cases} ; ~~~~~~   s: \begin{cases} x = t - 2  \\ y=t \\ 2t- 1   \end{cases}   
-  \end{equation}
-  %\end{equation}
-  Establish if it is possible to find a point $R$ located on $r$, and a point $S$ located on $s$, so that the line passing by $R$ and $S$ 
-  is parallel to the planes 
-  $\alpha : x - 3z + 2 = 0$ and  $\beta : 2x - y = 1$.
-  
-  \item 
-  %Fis, i, j, k, determinare equazioni parametriche della retta passante per P = (1, 3, 0), parallela al piano yz e al piano $x + y + z = 0$.
-  
-  Find a parametric equation describing the line passing by the point $P = (1, 3, 0)$, and parallel to both the $x=0$ plane (i.e., the $yz$ plane) and the plane $x + y + z = 0$. 
-  
-  \end{enumerate}
-% End of "Exercises set on Vectors"
+% Matrices end
 
 \pagebreak
-
-\textbf{Exercises set on Complex Numbers}
-
-\begin{enumerate}
-
-  \item  Perform  the following computations, reducing the result to
-  standard $a+ib$ form for complex numbers: 
-  \[
-  \begin{array}{lll}
-  13.\,\frac{\textstyle 1+i}{\textstyle 1-i} & 14.\,\frac{\textstyle 2+i}{\textstyle i-1} & 15.\,\frac{\textstyle 4+5i}{\textstyle 5-3i} \\ 
-  16.\,\frac{\textstyle 2+i}{\textstyle 3+2i}+\left( \frac{\textstyle i+4}{\textstyle 5i}\right)^{\ast} & 17.\,\frac{\textstyle i}{\textstyle 1+i}-\frac{\textstyle 1+i}{\textstyle i} & 18.\,\frac{\textstyle 3+5i}{\textstyle 5+3i}+4
-  \end{array}
-  \]
-  
-  Start here 
-  
-  \item Perform the following calculations using the Euler (polar) form for \underline{each of the complex numbers} involved (in other words: take each number and transform it into polar form. Then, execute the operation given.).
-  \[
-  \begin{array}{lll}
-  1.\;\left( 1+i\right) \left( 1-i\right)  & 2.\;\frac{\textstyle 1+i}{\textstyle 1+i\sqrt{3}} & 3.\;i\left( 3+4i\right)  \\ 
-  4.\;\frac{\textstyle 1-3i}{\textstyle i} & 5.\;\frac{\textstyle 1+i}{\textstyle \sqrt{2}}\cdot \left( 1+i\sqrt{3}\right)  & 6.\;\left( 1+i\right) ^{5}
-  \end{array}
-  \]
-  
-  \item Express the following quantities in Cartesian $\left(x+iy\right) $ form and Euler $\left( re^{i\theta}\right)$ form. Indicate where there are multiple values.
-  
-  \begin{enumerate}
-    \item $\exp \left( 1+i\sqrt{3}\right)$
-    
-    \item $\cos \left( 1+i\right)$
-    
-    \item $\sin \left( 1+i\right)$
-    
-    \item $\ln (2i)$
-    
-    \item $\ln \left( 1-i\pi \right)$
-    
-    \item $\cosh \left( 1+i\pi \right)$
-  \end{enumerate}
-  
-  \item Compute the following roots and rational powers. Be sure to find all the solutions and plot them on an Argand plane. 
-  \[
-  \begin{array}{lll}
-  1.\;i^{1/2} & 2.\;\left( -i\right) ^{1/2} & 3.\;2^{1/3} \\ 
-  4.\;2^{2/3} & 5.\;(1+i\sqrt{3})^{3/5} & 6.\;\left( 1-i\right) ^{-2/3}
-  \end{array}
-  \]
-  \end{enumerate}
-
-% End of "Exercises set on Complex Numbers"
-
-\pagebreak
-
-
-\textbf{Problem set on Complex Numbers}
-
-\begin{enumerate}
-
-  \item  Solve the equation  $z^7-4z^6+6z^5-6z^4+6z^3-12z^2+8z+4=0,$
-
-    \begin{enumerate}
-      \item By examining the effect of setting $z^3$ equal to $2,$ and then 
-      \item By factorising and using the binomial expansion of $(z+a)^4$
-
-      \bigbreak
-
-      Plot the seven roots of the equation on an Argand plot, exemplifying that complex roots of a polynomial equation always occur in conjugate pairs if the polynomial has real coefficients
-    \end{enumerate}
-
-  
-  (Note: because the results are given at the end of the chapter, most of the  credit will be given for steps. ) 
-  
-  [Hint:  show that it is possible to factorize the equation as follows: $(z^3-2)(a z^4 + b z^3 + c z^2 + d z + e)=0$, with $a,b,c,d,e$ to be found. ]
-  
-  \item  Use de Moivre’s theorem with $n=4$ to prove that
-
-  $cos(4\theta)=8cos^4(\theta)-8cos^2(\theta)+1$
-
-  and deduce that 
-
-  $cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$.
-
-  \bigbreak
-
-  \bigbreak
-
-
-    $[cos(\theta)+isin(\theta)]^4=cos(4\theta)+isin(4\theta)$
-
-    \emph{L.H.S:}
-
-    $[cos(\theta)+isin(\theta)]^4=[cos(\theta)+isin(\theta)]^2.[cos(\theta)+isin(\theta)]^2$
-
-    $=[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)].[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)]$
-
-    $=(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta)).(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta))$
-
-    \bigbreak
-
-    $=cos^4(\theta)-cos^2(\theta)sin^2(\theta)+2icos^3(\theta)sin(\theta)-sin^2(\theta)cos^2(\theta)+sin^4(\theta)-2icos(\theta)sin^3(\theta)+2icos^3(\theta)sin(\theta)-2icos(\theta)sin^3(\theta)-4cos^2(\theta)sin^2(\theta)$
-
-    \bigbreak
-
-    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+4icos^3(\theta)sin(\theta)-4icos(\theta)sin^3(\theta)$
-
-    \bigbreak
-
-    $\longrightarrow$ L.H.S: $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]$ 
-
-    \bigbreak
-
-    \emph{L.H.S = R.H.S}
-
-    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]=cos(4\theta)+isin(4\theta)$ 
-
-    \bigbreak
-
-    $\longrightarrow$ $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)sin^2(\theta)+sin^4(\theta)$
-
-    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)[1-cos^2(\theta)]+[1-cos^2(\theta)]^2$
-
-    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)+6cos^4(\theta)+1-2cos^2(\theta)+cos^4(\theta)$
-
-    $cos(4\theta)=8cos^4(\theta)-8cos^2(\theta)+1$ \thinspace \thinspace \thinspace  $\boxed{}$
-
-
-    \bigbreak
-
-
-    $cos(\dfrac{\pi}{8})=cos(4\dfrac{\pi}{32})=8cos^4(\dfrac{\pi}{32})-8cos^2(\dfrac{\pi}{32})+1$
-
-    From trigonometry we know that $cos(\dfrac{\theta}{2})=\sqrt{\dfrac{1+cos(\theta)}{2}}$
-
-    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})$ and $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})$
-
-    $cos(\dfrac{\pi}{8})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{4})}{2}}=\dfrac{\sqrt{2+\sqrt{2}}}{2}$
-
-    $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{8})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2}$
-
-    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{16})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}{2}$
-
-    \bigbreak
-
-    Let $cos(\dfrac{\pi}{32})=K$
-
-    \bigbreak
-
-    $8K^4-8K^2+1=(\dfrac{2+\sqrt{2}}{4})^{1/2}$
-
-    Since $cos(\dfrac{\pi}{8})=8K^4-8K^2+1$ $\Longrightarrow cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$ 
-
-
-  
-  \item  In the theory of special relativity, the relationship between the position and time coordinates of an event, as measured in two frames of reference that have parallel $x-$ axes, can be expressed in terms of hyperbolic functions. If the coordinates are $x$ and $t$ in one frame and $x^\prime$ and $t^\prime$ in the other, then the relationship take the form
-  
-  $x^\prime=x cosh(\phi)-ct sinh(\phi),$
-  
-  $ct^\prime=-xsinh(\phi)+ct cosh(\phi)$.
-
-  Express $x$ and $ct$ in terms of $x^\prime, ct^\prime$ and $\phi$ and show that 
-
-  $x^2-(ct)^2=(x^\prime)^2-(ct^\prime)^2$
-  
-  \item The principal value of the logarithmic function of a complex variable is defined to have its argument in the range $-\pi < arg z\leq \pi $. By writting $z=tan(w)$ in terms of exponentials show that
-
-  $tan^{-1}(z)=\dfrac{1}{2i} \ln(\dfrac{1+iz}{1-iz})$.
-
-  Use this result to evaluate
-
-  $tan^{-1}(\dfrac{2\sqrt{3}-3i}{7})$.
-  
-\end{enumerate}
-
-% End of "Problem set on Complex Numbers"
-
-\pagebreak
-
-\textbf{Problem set on Vectors}
-
-\begin{enumerate}
-
-  \item  The plane $P_1$ contains the points $A$, $B$ and $C$, which have position vectors $a = −3i + 2j, b = 7i + 2j$ and $c = 2i + 3j + 2k$, respectively. Plane $P_2$ passes through $A$ and is orthogonal to the line $BC$, whilst plane $P_3$ passes through $B$ and is orthogonal to the line $AC$. Find the coordinates of $r$, the point of intersection of the three planes.
-  
-  \item  Two fixed points, $A$ and $B$, in three-dimensional space have position vectors $a$ and $b$. Identify the plane $P$ given by \\
-  $(a-b).r=\dfrac{1}{1}(a^2-b^2)$, where $a$ and $b$ are the magnitudes of \textbf{a} and \textbf{b}. Show also that the equation $(a-r).(b-r)=0$ describes a sphere $S$ of radius $\dfrac{|a − b|}{2}$. Deduce that the intersection of $P$ and $S$ is also the intersection of two spheres, centred on $A$ and $B$, and each of radius $\dfrac{|a − b|}{\sqrt{2}}$.
-  
-  \item  Let $O$, $A$, $B$ and $C$ be four points with position vectors $O, a, b$ and $c$ and denoted by $g=\lambda a+ \mu b+\nu c$ the position of the centre of the sphere on which they all lie.
-  
-  
-    \begin{enumerate}
-      \item Prove that $\lambda, \mu$ and $\nu$ simultaneously satisfy
-
-      $(a.a)\lambda + (a.b) \mu+ (a.c)\nu = \dfrac{1}{2} a^2$
-
-      and two other similar equations. 
-      
-      \item By making a change of origin, find the centre and radius of the sphere on which the points $p=3i+j−2k, q=4i+3j−3k,$ $r=7i−3k$ and $s=6i+j−k$ all lie.
-    \end{enumerate}  
-  
-  \item  The vectors $a, b$ and $c$ are coplanar and related by
-
-  $\lambda a+\mu b+\nu c=0,$
-  
-  where $\lambda, \mu, \nu$ are not all zero. Show that the condition for the points with position vectors $\alpha a, \beta b$ and $\gamma c$ to be collinear is 
-
-  $\dfrac{\lambda}{\alpha}+\dfrac{\mu}{\beta}+\dfrac{\nu}{\mu}=0$
-
-  \item  Using vector methods:
-
-  \begin{enumerate}
-    \item Show that the line of intersection of the planes $x+2y+3z=0$ and $3x+2y+z=0$ is equally inclined to the $x-$ and $z-$ axes and makes an angle $cos^{-1}(\dfrac{-2}{\sqrt{6}})$ with the $y-axis$.
-    
-    \item Find the perpendicular distance between one corner of a unit cube and the major diagonal not passing through it.
-  \end{enumerate} 
-  
-\end{enumerate}
-
-% End of "Problem set on Vectors"
 
 
 \end{document}
