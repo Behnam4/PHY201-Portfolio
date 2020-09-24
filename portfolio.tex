@@ -310,7 +310,192 @@
 
     \rule{16cm}{0.4pt}
 
-    Start from here Behnam
+    $C=
+      \begin{pmatrix}
+        4 & 2 & 2 \\ 
+        -1 & 3 & -1 \\ 
+        3 & 4 & 5
+      \end{pmatrix}
+      ,
+      adj(C)=
+      \begin{pmatrix}
+      19 & 2 & -13 \\
+      -2 & 14 & -10 \\
+      -8 & 2 & 14
+      \end{pmatrix}^T
+      ,
+      det(C)=54
+    $
+
+    $C^{-1}= \dfrac{adj(C)}{det(C)}=\dfrac{
+      \begin{pmatrix}
+        19 & -2 & -8 \\
+        2 & 14 & 2 \\
+        -13 & -10 & 14
+      \end{pmatrix}
+    }{54}
+    =
+    \begin{pmatrix}
+      \dfrac{19}{54} & \dfrac{-1}{27} & \dfrac{-4}{27} \\
+      \dfrac{1}{27} & \dfrac{7}{27} & \dfrac{1}{27} \\
+      \dfrac{-13}{54} & \dfrac{-5}{27} & \dfrac{7}{27}
+    \end{pmatrix}
+    $
+
+    \rule{16cm}{0.4pt}
+
+
+    $D=
+      \begin{pmatrix}
+        2 & 3 & -1 & 1 \\ 
+        3 & -4 & 3 & -1 \\ 
+        2 & -1 & 1 & -3 \\ 
+        3 & 1 & -2 & 4
+      \end{pmatrix}
+    $
+
+    $
+    adj(D)=
+      \begin{pmatrix}
+        +det(D_{11}) & -det(D_{12}) & +det(D_{13}) & -det(D_{14}) \\ 
+        -det(D_{21}) & +det(D_{22}) & -det(D_{23}) & +det(D_{24}) \\ 
+        +det(D_{31}) & -det(D_{32}) & +det(D_{33}) & -det(D_{34}) \\ 
+        -det(D_{41}) & +det(D_{42}) & -det(D_{43}) & +det(D_{44}) 
+      \end{pmatrix}^T
+    $
+
+    $D_{11}=
+      \begin{pmatrix}
+        -4 & 3 & -1 \\ 
+        -1 & 1 & -3 \\ 
+        1 & -2 &  4
+      \end{pmatrix},
+      D_{12}=
+      \begin{pmatrix}
+       3 & 3 & -1 \\
+       2 & 1 & -3 \\
+       3 & -2 & 4 
+      \end{pmatrix},
+      D_{13}=\begin{pmatrix}
+       3 & -4 & -1 \\
+       2 & -1 & -3 \\
+       3 & 1 &  4 
+      \end{pmatrix}
+    $
+
+
+    $D_{14}=
+      \begin{pmatrix}
+       3 & -4 & 3 \\
+       2 & -1 & 1 \\
+       3 & 1 &  -2
+      \end{pmatrix},
+      D_{21}=
+      \begin{pmatrix}
+       3 & -1 & 1 \\
+       -1 & 1 & -3 \\
+       1 & -2 &  4
+      \end{pmatrix},
+      D_{22}=\begin{pmatrix}
+       2 & -1 & 1 \\
+       2 & 1 & -3 \\
+       3 & -2 & 4 
+      \end{pmatrix}
+    $
+
+    $D_{23}=
+      \begin{pmatrix}
+       2 & 3 & 1 \\
+       2 & -1 & -3 \\
+       3 & 1 & 4 
+      \end{pmatrix},
+      D_{24}=
+      \begin{pmatrix}
+       2 & 3 & -1 \\
+       2 & -1 & 1 \\
+       3 & 1 & -2 
+      \end{pmatrix},
+      D_{31}=\begin{pmatrix}
+       3 & -1 & 1 \\
+       -4 & 3 & -1 \\
+       1 & -2 & 4 
+      \end{pmatrix}
+    $
+
+    $D_{32}=
+      \begin{pmatrix}
+       2 & -1 & 1 \\
+       3 & 3 & -1 \\
+       3 & -2 & 4 
+      \end{pmatrix},
+      D_{33}=
+      \begin{pmatrix}
+       2 & 3 & 1 \\
+       3 & -4 & -1 \\
+       3 & 1 & 4 
+      \end{pmatrix},
+      D_{34}=\begin{pmatrix}
+       2 & 3 & -1 \\
+       3 & -4 & 3 \\
+       3 & 1 & -2 
+      \end{pmatrix}
+    $
+
+
+    $D_{41}=
+      \begin{pmatrix}
+       3 & -1 & 1 \\
+       -4 & 3 & -1 \\
+       -1 & 1 & -3 
+      \end{pmatrix},
+      D_{42}=
+      \begin{pmatrix}
+       2 & -1 & 1 \\
+       3 & 3 & -1 \\
+       2 & 1 & -3 
+      \end{pmatrix},
+      D_{43}=\begin{pmatrix}
+       2 & 3 & 1 \\
+       3 & -4 & -1 \\
+       2 & -1 & -3
+      \end{pmatrix}
+    $
+
+    $D_{44}=
+      \begin{pmatrix}
+       2 & 3 & -1 \\
+       3 & -4 & 3 \\
+       2 & -1 & 1 
+      \end{pmatrix}
+    $
+
+
+    $adj(D)=
+      \begin{pmatrix}
+       10 & 6 & 20 & 14 \\ 
+       50 & 6 & -20 & -26 \\ 
+       60 & 48 & -60 & -48 \\ 
+       10 & 18 & -40 & 2
+      \end{pmatrix}
+    $
+
+
+    $D^{-1}= \dfrac{adj(D)}{det(D)}=\dfrac{
+      \begin{pmatrix}
+        \dfrac{10}{120} & \dfrac{6}{120} & \dfrac{20}{120} & \dfrac{14}{120} \\ 
+        \dfrac{50}{120} & \dfrac{6}{120} & \dfrac{-20}{120} & \dfrac{-26}{120} \\ 
+        \dfrac{60}{120} & \dfrac{48}{120} & \dfrac{-60}{120} & \dfrac{-48}{120} \\ 
+        \dfrac{10}{120} & \dfrac{18}{120} & \dfrac{-40}{120} & \dfrac{2}{120}
+       \end{pmatrix}
+    }{120}
+    =
+    \begin{pmatrix}
+      \dfrac{1}{12} & \dfrac{1}{20} & \dfrac{1}{6} & \dfrac{7}{60} \\ 
+      \dfrac{5}{12} & \dfrac{1}{20} & \dfrac{-1}{6} & \dfrac{-13}{60} \\ 
+      \dfrac{1}{2} & \dfrac{2}{5} & \dfrac{-1}{2} & \dfrac{-2}{5} \\  
+      \dfrac{1}{12} & \dfrac{3}{20} & \dfrac{-1}{3} & \dfrac{1}{60}
+     \end{pmatrix}
+    $
 
   
   \item  Consider the following vectors (column matrices):
