@@ -10,6 +10,7 @@
 \usepackage{float}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{setspace}
+\usepackage{geometry}
 
 \doublespacing
 \begin{document}
@@ -763,7 +764,7 @@
       \item By factorising and using the binomial expansion of $(z+a)^4$
 
       \bigbreak
-      
+
       Plot the seven roots of the equation on an Argand plot, exemplifying that complex roots of a polynomial equation always occur in conjugate pairs if the polynomial has real coefficients
     \end{enumerate}
 
@@ -779,6 +780,77 @@
   and deduce that 
 
   $cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$.
+
+  \bigbreak
+
+  \bigbreak
+
+
+    $[cos(\theta)+isin(\theta)]^4=cos(4\theta)+isin(4\theta)$
+
+    \emph{L.H.S:}
+
+    $[cos(\theta)+isin(\theta)]^4=[cos(\theta)+isin(\theta)]^2.[cos(\theta)+isin(\theta)]^2$
+
+    $=[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)].[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)]$
+
+    $=(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta)).(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta))$
+
+    \bigbreak
+
+    $=cos^4(\theta)-cos^2(\theta)sin^2(\theta)+2icos^3(\theta)sin(\theta)-sin^2(\theta)cos^2(\theta)+sin^4(\theta)-2icos(\theta)sin^3(\theta)+2icos^3(\theta)sin(\theta)-2icos(\theta)sin^3(\theta)-4cos^2(\theta)sin^2(\theta)$
+
+    \bigbreak
+
+    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+4icos^3(\theta)sin(\theta)-4icos(\theta)sin^3(\theta)$
+
+    \bigbreak
+
+    $\longrightarrow$ L.H.S: $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]$ 
+
+    \bigbreak
+
+    \emph{L.H.S = R.H.S}
+
+    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]=cos(4\theta)+isin(4\theta)$ 
+
+    \bigbreak
+
+    $\longrightarrow$ $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)sin^2(\theta)+sin^4(\theta)$
+
+    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)[1-cos^2(\theta)]+[1-cos^2(\theta)]^2$
+
+    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)+6cos^4(\theta)+1-2cos^2(\theta)+cos^4(\theta)$
+
+    $cos(4\theta)=8cos^4(\theta)-8cos^2(\theta)+1$ \thinspace \thinspace \thinspace  $\boxed{}$
+
+
+    \bigbreak
+
+
+    $cos(\dfrac{\pi}{8})=cos(4\dfrac{\pi}{32})=8cos^4(\dfrac{\pi}{32})-8cos^2(\dfrac{\pi}{32})+1$
+
+    From trigonometry we know that $cos(\dfrac{\theta}{2})=\sqrt{\dfrac{1+cos(\theta)}{2}}$
+
+    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})$ and $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})$
+
+    $cos(\dfrac{\pi}{8})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{4})}{2}}=\dfrac{\sqrt{2+\sqrt{2}}}{2}$
+
+    $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{8})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2}$
+
+    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{16})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}{2}$
+
+    \bigbreak
+
+    Let $cos(\dfrac{\pi}{32})=K$
+
+    \bigbreak
+
+    $8K^4-8K^2+1=(\dfrac{2+\sqrt{2}}{4})^{1/2}$
+
+    Since $cos(\dfrac{\pi}{8})=8K^4-8K^2+1$ $\Longrightarrow cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$ 
+
+
   
   \item  In the theory of special relativity, the relationship between the position and time coordinates of an event, as measured in two frames of reference that have parallel $x-$ axes, can be expressed in terms of hyperbolic functions. If the coordinates are $x$ and $t$ in one frame and $x^\prime$ and $t^\prime$ in the other, then the relationship take the form
   
