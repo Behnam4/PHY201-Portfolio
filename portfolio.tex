@@ -14,6 +14,8 @@
 \usepackage{colortbl}
 \usepackage{xcolor,colortbl}
 
+\definecolor{hwColor}{HTML}{AD53BA}
+
 \doublespacing
 \begin{document}
 
@@ -26,7 +28,7 @@
 
 \textsc{\LARGE Arizona State University}\\[1.5cm] 
 
-\textsc{\Large Mathematical Methods For Physics I }\\[0.5cm]
+\textsc{\LARGE Mathematical Methods For Physics I }\\[1.5cm]
 
 
 \begin{figure}
@@ -150,70 +152,43 @@
   \bigbreak
 
 
-    $[cos(\theta)+isin(\theta)]^4=cos(4\theta)+isin(4\theta)$
+    \textcolor{hwColor}{
+      $[cos(\theta)+isin(\theta)]^4=cos(4\theta)+isin(4\theta)$ \\
+      \emph{L.H.S:} \\ 
+      $[cos(\theta)+isin(\theta)]^4=[cos(\theta)+isin(\theta)]^2.[cos(\theta)+isin(\theta)]^2$ \\
+      $=[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)].[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)]$ \\
+      $=(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta)).(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta))$ \\
+      $=cos^4(\theta)-cos^2(\theta)sin^2(\theta)+2icos^3(\theta)sin(\theta)-sin^2(\theta)cos^2(\theta)+sin^4(\theta)-2icos(\theta)sin^3(\theta)+2icos^3(\theta)sin(\theta)-2icos(\theta)sin^3(\theta)-4cos^2(\theta)sin^2(\theta)$ \\
+      $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+4icos^3(\theta)sin(\theta)-4icos(\theta)sin^3(\theta)$ \\
+      $\Longrightarrow$ \emph{L.H.S:} \\
+      $cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]$ 
+    }
 
-    \emph{L.H.S:}
-
-    $[cos(\theta)+isin(\theta)]^4=[cos(\theta)+isin(\theta)]^2.[cos(\theta)+isin(\theta)]^2$
-
-    $=[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)].[cos^2(\theta)+i^2sin^2(\theta)+2icos(\theta)sin(\theta)]$
-
-    $=(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta)).(cos^2(\theta)-sin^2(\theta)+2icos(\theta)sin(\theta))$
-
-    \bigbreak
-
-    $=cos^4(\theta)-cos^2(\theta)sin^2(\theta)+2icos^3(\theta)sin(\theta)-sin^2(\theta)cos^2(\theta)+sin^4(\theta)-2icos(\theta)sin^3(\theta)+2icos^3(\theta)sin(\theta)-2icos(\theta)sin^3(\theta)-4cos^2(\theta)sin^2(\theta)$
-
-    \bigbreak
-
-    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+4icos^3(\theta)sin(\theta)-4icos(\theta)sin^3(\theta)$
-
-    \bigbreak
-
-    $\longrightarrow$ L.H.S: $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]$ 
-
-    \bigbreak
-
-    \emph{L.H.S = R.H.S}
-
-    $=cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]=cos(4\theta)+isin(4\theta)$ 
+    \textcolor{hwColor}{
+      \emph{L.H.S = R.H.S} \\
+      $cos^4(\theta)+sin^4(\theta)-6cos^2(\theta)sin^2(\theta)+i[4cos^3(\theta)sin(\theta)-4cos(\theta)sin^3(\theta)]=cos(4\theta)+isin(4\theta)$ \\
+      $\longrightarrow$ $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)sin^2(\theta)+sin^4(\theta)$ \\
+      $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)[1-cos^2(\theta)]+[1-cos^2(\theta)]^2$ \\
+      $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)+6cos^4(\theta)+1-2cos^2(\theta)+cos^4(\theta)$ \\
+      $cos(4\theta)=8cos^4(\theta)-8cos^2(\theta)+1$ \thinspace \thinspace \thinspace  $\boxed{}$ \\
+    }
 
     \bigbreak
 
-    $\longrightarrow$ $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)sin^2(\theta)+sin^4(\theta)$
+    \textcolor{hwColor}{
+      $cos(\dfrac{\pi}{8})=cos(4\dfrac{\pi}{32})=8cos^4(\dfrac{\pi}{32})-8cos^2(\dfrac{\pi}{32})+1$ \\
+      From trigonometry we know that $cos(\dfrac{\theta}{2})=\sqrt{\dfrac{1+cos(\theta)}{2}}$ \\
+      $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})$ and $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})$ \\
+      $cos(\dfrac{\pi}{8})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{4})}{2}}=\dfrac{\sqrt{2+\sqrt{2}}}{2}$ \\
+      $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{8})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2}$ \\
+      $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{16})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}{2}$ \\
+    }
 
-    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)[1-cos^2(\theta)]+[1-cos^2(\theta)]^2$
-
-    $cos(4\theta)=cos^4(\theta)-6cos^2(\theta)+6cos^4(\theta)+1-2cos^2(\theta)+cos^4(\theta)$
-
-    $cos(4\theta)=8cos^4(\theta)-8cos^2(\theta)+1$ \thinspace \thinspace \thinspace  $\boxed{}$
-
-
-    \bigbreak
-
-
-    $cos(\dfrac{\pi}{8})=cos(4\dfrac{\pi}{32})=8cos^4(\dfrac{\pi}{32})-8cos^2(\dfrac{\pi}{32})+1$
-
-    From trigonometry we know that $cos(\dfrac{\theta}{2})=\sqrt{\dfrac{1+cos(\theta)}{2}}$
-
-    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})$ and $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})$
-
-    $cos(\dfrac{\pi}{8})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{4})}{2}}=\dfrac{\sqrt{2+\sqrt{2}}}{2}$
-
-    $cos(\dfrac{\pi}{16})=cos(\dfrac{\dfrac{\pi}{8}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{8})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2}$
-
-    $cos(\dfrac{\pi}{32})=cos(\dfrac{\dfrac{\pi}{16}}{2})=\sqrt{\dfrac{1+cos(\dfrac{\pi}{16})}{2}}=\dfrac{\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}{2}$
-
-    \bigbreak
-
-    Let $cos(\dfrac{\pi}{32})=K$
-
-    \bigbreak
-
-    $8K^4-8K^2+1=(\dfrac{2+\sqrt{2}}{4})^{1/2}$
-
-    Since $cos(\dfrac{\pi}{8})=8K^4-8K^2+1$ $\Longrightarrow cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$ 
-
+    \textcolor{hwColor}{
+      Let $cos(\dfrac{\pi}{32})=K$ \\
+      $8K^4-8K^2+1=(\dfrac{2+\sqrt{2}}{4})^{1/2}$ \\
+      Since $cos(\dfrac{\pi}{8})=8K^4-8K^2+1$ $\Longrightarrow cos(\dfrac{\pi}{8})=(\dfrac{2+\sqrt{2}}{4})^{1/2}$  \\
+    }
 
   
   \item  In the theory of special relativity, the relationship between the position and time coordinates of an event, as measured in two frames of reference that have parallel $x-$ axes, can be expressed in terms of hyperbolic functions. If the coordinates are $x$ and $t$ in one frame and $x^\prime$ and $t^\prime$ in the other, then the relationship take the form
@@ -253,37 +228,35 @@
   \end{array}
   \]
   
-  13. $\dfrac{1+i}{1-i}=(\dfrac{1+i}{1-i}).(\dfrac{1+i}{1+i})=\dfrac{1+2i+i^2}{1-i^2}=0+i$
+    \textcolor{hwColor}{
+      13. $\dfrac{1+i}{1-i}=(\dfrac{1+i}{1-i}).(\dfrac{1+i}{1+i})=\dfrac{1+2i+i^2}{1-i^2}=0+i$
+    }
 
-  \bigbreak
-  
-  14. $\dfrac{2+i}{i-1}=(\dfrac{2+i}{i-1}).(\dfrac{i+1}{i+1})=\dfrac{2i+2+i^2+i}{i^2-1^2}=-(\dfrac{1}{2}+i\dfrac{3}{2})$
+    \textcolor{hwColor}{
+      14. $\dfrac{2+i}{i-1}=(\dfrac{2+i}{i-1}).(\dfrac{i+1}{i+1})=\dfrac{2i+2+i^2+i}{i^2-1^2}=-(\dfrac{1}{2}+i\dfrac{3}{2})$
+    }
+    
+    \textcolor{hwColor}{
+      15. $\dfrac{4+5i}{5-3i}=(\dfrac{4+5i}{5-3i}).(\dfrac{5+3i}{5+3i})=\dfrac{20+12i+25i+15i^2}{5^2-(3i)^2}=\dfrac{5}{34}+i\dfrac{37}{34}$
+    }
 
-  \bigbreak
+    \textcolor{hwColor}{
+      16. $\dfrac{2+i}{3+2i}+(\dfrac{i+4}{5i})^*=\dfrac{2+i}{3+2i}+\dfrac{4-i}{-5i}=\dfrac{-5i(2+i)+(4-i)(3+2i)}{-5i(3+2i)}$ \\
+      $=\dfrac{19-5i}{10-15i}=(\dfrac{19-5i}{10-15i}).(\dfrac{10+15i}{10+15i})=\dfrac{190+285i-50i-75i^2}{10^2-(15i)^2}$ \\
+      $=\dfrac{265+235i}{325}=\dfrac{53}{65}+i\dfrac{47}{65}$ \\
+    }
 
-  15. $\dfrac{4+5i}{5-3i}=(\dfrac{4+5i}{5-3i}).(\dfrac{5+3i}{5+3i})=\dfrac{20+12i+25i+15i^2}{5^2-(3i)^2}=\dfrac{5}{34}+i\dfrac{37}{34}$
+    \textcolor{hwColor}{
+      17. $\dfrac{i}{1+i}-\dfrac{1+i}{i}=\dfrac{i^2-(1+i)^2}{(1+i)i}=\dfrac{i^2-(1+2i+i^2)}{i+i^2}=\dfrac{-1-2i}{-1+i}$ \\
+      $=(\dfrac{-1-2i}{-1+i}).(\dfrac{-1-i}{-1-i})=\dfrac{-1-i+2i+2i^2}{(-1)^2-(i)^2}=\dfrac{-1-i+2i-2}{1+1}$ \\
+      $=\dfrac{-3}{2}+i\dfrac{1}{2}$ \\
+    }
 
-  \bigbreak
-
-  16. $\dfrac{2+i}{3+2i}+(\dfrac{i+4}{5i})^*=\dfrac{2+i}{3+2i}+\dfrac{4-i}{-5i}=\dfrac{-5i(2+i)+(4-i)(3+2i)}{-5i(3+2i)}$
-
-  $=\dfrac{19-5i}{10-15i}=(\dfrac{19-5i}{10-15i}).(\dfrac{10+15i}{10+15i})=\dfrac{190+285i-50i-75i^2}{10^2-(15i)^2}$
-
-  $=\dfrac{265+235i}{325}=\dfrac{53}{65}+i\dfrac{47}{65}$
-
-  \bigbreak
-
-  17. $\dfrac{i}{1+i}-\dfrac{1+i}{i}=\dfrac{i^2-(1+i)^2}{(1+i)i}=\dfrac{i^2-(1+2i+i^2)}{i+i^2}=\dfrac{-1-2i}{-1+i}$
-
-  $=(\dfrac{-1-2i}{-1+i}).(\dfrac{-1-i}{-1-i})=\dfrac{-1-i+2i+2i^2}{(-1)^2-(i)^2}=\dfrac{-1-i+2i-2}{1+1}$
-
-  $=\dfrac{-3}{2}+i\dfrac{1}{2}$
-
-  18. $\dfrac{3+5i}{5+3i}+4=\dfrac{3+5i+20+12i}{5+3i}=\dfrac{23+17i}{5+3i}$
-
-  $=(\dfrac{23+17i}{5+3i}).(\dfrac{5-3i}{5-3i})=\dfrac{115-69i+85i-51i^2}{5^2-(3i)^2}$
-
-  $=\dfrac{166+16i}{25+9}=\dfrac{83}{17}+i\dfrac{8}{17}$
+    \textcolor{hwColor}{
+      18. $\dfrac{3+5i}{5+3i}+4=\dfrac{3+5i+20+12i}{5+3i}=\dfrac{23+17i}{5+3i}$ \\
+      $=(\dfrac{23+17i}{5+3i}).(\dfrac{5-3i}{5-3i})=\dfrac{115-69i+85i-51i^2}{5^2-(3i)^2}$ \\
+      $=\dfrac{166+16i}{25+9}=\dfrac{83}{17}+i\dfrac{8}{17}$ \\
+    }
   
   \item Perform the following calculations using the Euler (polar) form for \underline{each of the complex numbers} involved (in other words: take each number and transform it into polar form. Then, execute the operation given.).
   \[
@@ -472,389 +445,329 @@
     \end{eqnarray*}
 
     % Answer 
-    \rule{16cm}{0.4pt}
 
-    $
-      det(A)=
-      3(-1)^{1+1}
-      \begin{pmatrix}
-        -3 & -1 \\ 
-        2 & 3
-      \end{pmatrix}
-      +
-      1(-1)^{1+2}
-      \begin{pmatrix}
-        -1 & -1 \\ 
-        2 & 3
-      \end{pmatrix}
-      +
-      5(-1)^{1+3}
-      \begin{pmatrix}
-        -1 & -3 \\ 
-        2 & 2
-      \end{pmatrix}
-    $
-
-    $
-      = 3(-9-(-2))+(-1)(-3-(-2)+5(-2-(-6))
-    $
-
-    $\Rightarrow$ 
-    $
-      det(A)=0
-    $
-
-    \emph{Matrix A is singular therefore it is NOT invertible.}
+    \textcolor{hwColor}{
+      $
+        det(A)=
+        3(-1)^{1+1}
+        \begin{pmatrix}
+          -3 & -1 \\ 
+          2 & 3
+        \end{pmatrix}
+        +
+        1(-1)^{1+2}
+        \begin{pmatrix}
+          -1 & -1 \\ 
+          2 & 3
+        \end{pmatrix}
+        +
+        5(-1)^{1+3}
+        \begin{pmatrix}
+          -1 & -3 \\ 
+          2 & 2
+        \end{pmatrix} \\
+        = 3(-9-(-2))+(-1)(-3-(-2)+5(-2-(-6)) \\
+        \Longrightarrow det(A)=0 \\
+        \emph{Matrix A is singular therefore it is NOT invertible.}
+      $
+    }
 
     \rule{16cm}{0.4pt}
 
-    \bigbreak
-
-    $
-      det(B)=
-      (6)(-1)^{1+1}
-      \begin{pmatrix}
-        1 & 1 \\ 
-        -3 & 1
-      \end{pmatrix}
-      +
-      (-2)(-1)^{1+2}
-      \begin{pmatrix}
-        1 & 1 \\ 
-        2 & 1
-      \end{pmatrix}
-      +
-      (3)(-1)^{1+3}
-      \begin{pmatrix}
-        1 & 1 \\ 
-        2 & -3
-      \end{pmatrix}
-    $
-
-    $
-      = 6(1-(-3))+(2)(1-2)+(3)(-3-2)
-    $
-
-    $\Rightarrow$ 
-    $
-      det(B)=7
-    $
-
-    \emph{Matrix B is invertible.}
+    \textcolor{hwColor}{
+      $
+        det(B)=
+        (6)(-1)^{1+1}
+        \begin{pmatrix}
+          1 & 1 \\ 
+          -3 & 1
+        \end{pmatrix}
+        +
+        (-2)(-1)^{1+2}
+        \begin{pmatrix}
+          1 & 1 \\ 
+          2 & 1
+        \end{pmatrix}
+        +
+        (3)(-1)^{1+3}
+        \begin{pmatrix}
+          1 & 1 \\ 
+          2 & -3
+        \end{pmatrix} \\
+        = 6(1-(-3))+(2)(1-2)+(3)(-3-2) \\
+        \Longrightarrow det(B)=7 \\
+        \emph{Matrix B is invertible.}
+      $
+    }
 
     \rule{16cm}{0.4pt}
 
-    \bigbreak
-
-    $
-    det(C)=
-      (4)(-1)^{1+1}
-      \begin{pmatrix}
-        3 & -1 \\ 
-        4 & 5
-      \end{pmatrix}
-      +
-      (2)(-1)^{1+2}
-      \begin{pmatrix}
-        -1 & -1 \\ 
-        3 & 5
-      \end{pmatrix}
-      +
-      (2)(-1)^{1+3}
-      \begin{pmatrix}
-        -1 & 3 \\ 
-        3 & 4
-      \end{pmatrix}
-    $
-
-    $
-      = 4(15-(-4))+(-2)(-5-(-3))+(2)(-4-9)
-    $
-
-    $\Rightarrow$ 
-    $
-      det(C)= 54
-    $
-
-    \emph{Matrix C is invertible.}
+    \textcolor{hwColor}{
+      $
+        det(C)=
+          (4)(-1)^{1+1}
+          \begin{pmatrix}
+            3 & -1 \\ 
+            4 & 5
+          \end{pmatrix}
+          +
+          (2)(-1)^{1+2}
+          \begin{pmatrix}
+            -1 & -1 \\ 
+            3 & 5
+          \end{pmatrix}
+          +
+          (2)(-1)^{1+3}
+          \begin{pmatrix}
+            -1 & 3 \\ 
+            3 & 4
+          \end{pmatrix} \\
+        = 4(15-(-4))+(-2)(-5-(-3))+(2)(-4-9) \\
+        \Longrightarrow det(C)= 54 \\
+        \emph{Matrix C is invertible.}
+      $
+    }
 
     \rule{16cm}{0.4pt}
 
-    \bigbreak
+    \textcolor{hwColor}{
+      $
+      det(D)=
+        (2)(-1)^{1+1}
+        \begin{pmatrix}
+          -4 & 3 & -1 \\ 
+          -1 & 1 & -3 \\ 
+          1 & -2 & 4
+        \end{pmatrix}
+        +
+        (3)(-1)^{2+1}
+        \begin{pmatrix}
+          3 & -1 & 1 \\ 
+          -1 & 1 & -3 \\ 
+          1 & -2 & 4
+        \end{pmatrix}
+        +
+        (2)(-1)^{3+1}
+        \begin{pmatrix}
+         3 & -1 & 1 \\ 
+         -4 & 3 & -1 \\ 
+         1 & -2 & 4
+        \end{pmatrix}
+        +
+        (3)(-1)^{4+1}
+        \begin{pmatrix}
+         3 & -1 & 1 \\ 
+         -4 & 3 & -1 \\ 
+         -1 & 1 & -3
+        \end{pmatrix} \\
+        = 2[-4(4-6)-3(-4+3)-(2-1)]+(-3)[3(4-6)+(-4+3)+(2-1)]
+        + 2[3(12-2)+(-16+1)+(8-3)]+(-3)[3(-9+1)+(12-1)+(-4+3)] \\
+      = 20+18+40+42 \\
+      \Longrightarrow det(D)= 120 \\
+      \emph{Matrix D is invertible.} \\
+      $
+    }
 
-    $
-    det(D)=
-      (2)(-1)^{1+1}
-      \begin{pmatrix}
-        -4 & 3 & -1 \\ 
-        -1 & 1 & -3 \\ 
-        1 & -2 & 4
-      \end{pmatrix}
-      +
-      (3)(-1)^{2+1}
-      \begin{pmatrix}
-        3 & -1 & 1 \\ 
-        -1 & 1 & -3 \\ 
-        1 & -2 & 4
-      \end{pmatrix}
-      +
-      (2)(-1)^{3+1}
-      \begin{pmatrix}
-       3 & -1 & 1 \\ 
-       -4 & 3 & -1 \\ 
-       1 & -2 & 4
-      \end{pmatrix}
-      +
-      (3)(-1)^{4+1}
-      \begin{pmatrix}
-       3 & -1 & 1 \\ 
-       -4 & 3 & -1 \\ 
-       -1 & 1 & -3
-      \end{pmatrix}
-    $
-
-    $
-      = 2[-4(4-6)-3(-4+3)-(2-1)]+(-3)[3(4-6)+(-4+3)+(2-1)]
-      + 2[3(12-2)+(-16+1)+(8-3)]+(-3)[3(-9+1)+(12-1)+(-4+3)]
-    $
-
-    $
-    = 20+18+40+42
-  $
-
-    $\Rightarrow$ 
-    $
-      det(D)= 120
-    $
-
-    \emph{Matrix D is invertible.}
-
-    \bigbreak
 
   \item Continue the previous exercise: for the matrices that have non-vanishing determinants, compute the inverses using a method of your choice (5 points for each inverse calculation). 
-
-    \emph{The adjoint of a matrix is the transpose of the cofactor matrix of that matrix.}
-    
-    $B=
-      \begin{pmatrix}
-        6 & -2 & 3 \\ 
-        1 & 1 & 1 \\ 
-        2 & -3 & 1
-      \end{pmatrix}
-      ,
-      adj(B)=
-      \begin{pmatrix}
-       4 & 1 & -5 \\
-       -7 & 0 & 14 \\
-       -5 & -3 & 8
-      \end{pmatrix}^T
-      ,
-      det(B)=7
-    $
-
-    $B^{-1}= \dfrac{adj(B)}{det(B)}=\dfrac{
-      \begin{pmatrix}
-        4 & -7 & -5 \\
-        1 & 0 & -3 \\
-        -5 & 14 & 8
-       \end{pmatrix}
-    }{7}
-    =
-    \begin{pmatrix}
-      \dfrac{4}{7} & -1 & \dfrac{-5}{7} \\
-      \dfrac{1}{7} & 0 & \dfrac{-3}{7} \\
-      \dfrac{-5}{7} & 2 & \dfrac{8}{7}
-     \end{pmatrix}
-    $
+    \textcolor{hwColor}{
+      \emph{The adjoint of a matrix is the transpose of the cofactor matrix of that matrix.}
+        $
+          B=\begin{pmatrix}
+            6 & -2 & 3 \\ 
+            1 & 1 & 1 \\ 
+            2 & -3 & 1
+          \end{pmatrix}
+          ,
+          adj(B)=
+          \begin{pmatrix}
+          4 & 1 & -5 \\
+          -7 & 0 & 14 \\
+          -5 & -3 & 8
+          \end{pmatrix}^T \\
+          ,
+          det(B)=7
+        B^{-1}= \dfrac{adj(B)}{det(B)}=\dfrac{
+          \begin{pmatrix}
+            4 & -7 & -5 \\
+            1 & 0 & -3 \\
+            -5 & 14 & 8
+          \end{pmatrix}
+        }{7}=
+        \begin{pmatrix}
+          \dfrac{4}{7} & -1 & \dfrac{-5}{7} \\
+          \dfrac{1}{7} & 0 & \dfrac{-3}{7} \\
+          \dfrac{-5}{7} & 2 & \dfrac{8}{7}
+        \end{pmatrix}
+      $
+    }
 
     \rule{16cm}{0.4pt}
 
-    $C=
+    \textcolor{hwColor}{
+      $
+        C=\begin{pmatrix}
+          4 & 2 & 2 \\ 
+          -1 & 3 & -1 \\ 
+          3 & 4 & 5
+        \end{pmatrix}
+        ,
+        adj(C)=
+        \begin{pmatrix}
+        19 & 2 & -13 \\
+        -2 & 14 & -10 \\
+        -8 & 2 & 14
+        \end{pmatrix}^T
+        ,
+        det(C)=54 \\
+      C^{-1}= \dfrac{adj(C)}{det(C)}=\dfrac{
+        \begin{pmatrix}
+          19 & -2 & -8 \\
+          2 & 14 & 2 \\
+          -13 & -10 & 14
+        \end{pmatrix}
+      }{54}
+      =
       \begin{pmatrix}
-        4 & 2 & 2 \\ 
-        -1 & 3 & -1 \\ 
-        3 & 4 & 5
+        \dfrac{19}{54} & \dfrac{-1}{27} & \dfrac{-4}{27} \\
+        \dfrac{1}{27} & \dfrac{7}{27} & \dfrac{1}{27} \\
+        \dfrac{-13}{54} & \dfrac{-5}{27} & \dfrac{7}{27}
       \end{pmatrix}
-      ,
-      adj(C)=
-      \begin{pmatrix}
-      19 & 2 & -13 \\
-      -2 & 14 & -10 \\
-      -8 & 2 & 14
-      \end{pmatrix}^T
-      ,
-      det(C)=54
-    $
-
-    $C^{-1}= \dfrac{adj(C)}{det(C)}=\dfrac{
-      \begin{pmatrix}
-        19 & -2 & -8 \\
-        2 & 14 & 2 \\
-        -13 & -10 & 14
-      \end{pmatrix}
-    }{54}
-    =
-    \begin{pmatrix}
-      \dfrac{19}{54} & \dfrac{-1}{27} & \dfrac{-4}{27} \\
-      \dfrac{1}{27} & \dfrac{7}{27} & \dfrac{1}{27} \\
-      \dfrac{-13}{54} & \dfrac{-5}{27} & \dfrac{7}{27}
-    \end{pmatrix}
-    $
+      $
+    }
 
     \rule{16cm}{0.4pt}
 
-
-    $D=
-      \begin{pmatrix}
-        2 & 3 & -1 & 1 \\ 
-        3 & -4 & 3 & -1 \\ 
-        2 & -1 & 1 & -3 \\ 
-        3 & 1 & -2 & 4
-      \end{pmatrix}
-    $
-
-    $
-    adj(D)=
-      \begin{pmatrix}
-        +det(D_{11}) & -det(D_{12}) & +det(D_{13}) & -det(D_{14}) \\ 
-        -det(D_{21}) & +det(D_{22}) & -det(D_{23}) & +det(D_{24}) \\ 
-        +det(D_{31}) & -det(D_{32}) & +det(D_{33}) & -det(D_{34}) \\ 
-        -det(D_{41}) & +det(D_{42}) & -det(D_{43}) & +det(D_{44}) 
-      \end{pmatrix}^T
-    $
-
-    $D_{11}=
-      \begin{pmatrix}
-        -4 & 3 & -1 \\ 
-        -1 & 1 & -3 \\ 
-        1 & -2 &  4
-      \end{pmatrix},
-      D_{12}=
-      \begin{pmatrix}
-       3 & 3 & -1 \\
-       2 & 1 & -3 \\
-       3 & -2 & 4 
-      \end{pmatrix},
-      D_{13}=\begin{pmatrix}
-       3 & -4 & -1 \\
-       2 & -1 & -3 \\
-       3 & 1 &  4 
-      \end{pmatrix}
-    $
-
-
-    $D_{14}=
-      \begin{pmatrix}
-       3 & -4 & 3 \\
-       2 & -1 & 1 \\
-       3 & 1 &  -2
-      \end{pmatrix},
-      D_{21}=
-      \begin{pmatrix}
-       3 & -1 & 1 \\
-       -1 & 1 & -3 \\
-       1 & -2 &  4
-      \end{pmatrix},
-      D_{22}=\begin{pmatrix}
-       2 & -1 & 1 \\
-       2 & 1 & -3 \\
-       3 & -2 & 4 
-      \end{pmatrix}
-    $
-
-    $D_{23}=
-      \begin{pmatrix}
-       2 & 3 & 1 \\
-       2 & -1 & -3 \\
-       3 & 1 & 4 
-      \end{pmatrix},
-      D_{24}=
-      \begin{pmatrix}
-       2 & 3 & -1 \\
-       2 & -1 & 1 \\
-       3 & 1 & -2 
-      \end{pmatrix},
-      D_{31}=\begin{pmatrix}
-       3 & -1 & 1 \\
-       -4 & 3 & -1 \\
-       1 & -2 & 4 
-      \end{pmatrix}
-    $
-
-    $D_{32}=
-      \begin{pmatrix}
-       2 & -1 & 1 \\
-       3 & 3 & -1 \\
-       3 & -2 & 4 
-      \end{pmatrix},
-      D_{33}=
-      \begin{pmatrix}
-       2 & 3 & 1 \\
-       3 & -4 & -1 \\
-       3 & 1 & 4 
-      \end{pmatrix},
-      D_{34}=\begin{pmatrix}
-       2 & 3 & -1 \\
-       3 & -4 & 3 \\
-       3 & 1 & -2 
-      \end{pmatrix}
-    $
-
-
-    $D_{41}=
-      \begin{pmatrix}
-       3 & -1 & 1 \\
-       -4 & 3 & -1 \\
-       -1 & 1 & -3 
-      \end{pmatrix},
-      D_{42}=
-      \begin{pmatrix}
-       2 & -1 & 1 \\
-       3 & 3 & -1 \\
-       2 & 1 & -3 
-      \end{pmatrix},
-      D_{43}=\begin{pmatrix}
-       2 & 3 & 1 \\
-       3 & -4 & -1 \\
-       2 & -1 & -3
-      \end{pmatrix}
-    $
-
-    $D_{44}=
-      \begin{pmatrix}
-       2 & 3 & -1 \\
-       3 & -4 & 3 \\
-       2 & -1 & 1 
-      \end{pmatrix}
-    $
-
-
-    $adj(D)=
-      \begin{pmatrix}
-       10 & 6 & 20 & 14 \\ 
-       50 & 6 & -20 & -26 \\ 
-       60 & 48 & -60 & -48 \\ 
-       10 & 18 & -40 & 2
-      \end{pmatrix}
-    $
-
-
-    $D^{-1}= \dfrac{adj(D)}{det(D)}=\dfrac{
-      \begin{pmatrix}
-        \dfrac{10}{120} & \dfrac{6}{120} & \dfrac{20}{120} & \dfrac{14}{120} \\ 
-        \dfrac{50}{120} & \dfrac{6}{120} & \dfrac{-20}{120} & \dfrac{-26}{120} \\ 
-        \dfrac{60}{120} & \dfrac{48}{120} & \dfrac{-60}{120} & \dfrac{-48}{120} \\ 
-        \dfrac{10}{120} & \dfrac{18}{120} & \dfrac{-40}{120} & \dfrac{2}{120}
-       \end{pmatrix}
-    }{120}
-    =
-    \begin{pmatrix}
-      \dfrac{1}{12} & \dfrac{1}{20} & \dfrac{1}{6} & \dfrac{7}{60} \\ 
-      \dfrac{5}{12} & \dfrac{1}{20} & \dfrac{-1}{6} & \dfrac{-13}{60} \\ 
-      \dfrac{1}{2} & \dfrac{2}{5} & \dfrac{-1}{2} & \dfrac{-2}{5} \\  
-      \dfrac{1}{12} & \dfrac{3}{20} & \dfrac{-1}{3} & \dfrac{1}{60}
-     \end{pmatrix}
-    $
+    \textcolor{hwColor}{ 
+      $
+        D=
+        \begin{pmatrix}
+          2 & 3 & -1 & 1 \\ 
+          3 & -4 & 3 & -1 \\ 
+          2 & -1 & 1 & -3 \\ 
+          3 & 1 & -2 & 4
+        \end{pmatrix} \\
+        adj(D)=
+          \begin{pmatrix}
+            +det(D_{11}) & -det(D_{12}) & +det(D_{13}) & -det(D_{14}) \\ 
+            -det(D_{21}) & +det(D_{22}) & -det(D_{23}) & +det(D_{24}) \\ 
+            +det(D_{31}) & -det(D_{32}) & +det(D_{33}) & -det(D_{34}) \\ 
+            -det(D_{41}) & +det(D_{42}) & -det(D_{43}) & +det(D_{44}) 
+          \end{pmatrix}^T \\
+        D_{11}=
+          \begin{pmatrix}
+            -4 & 3 & -1 \\ 
+            -1 & 1 & -3 \\ 
+            1 & -2 &  4
+          \end{pmatrix},
+          D_{12}=
+          \begin{pmatrix}
+          3 & 3 & -1 \\
+          2 & 1 & -3 \\
+          3 & -2 & 4 
+          \end{pmatrix},
+          D_{13}=\begin{pmatrix}
+          3 & -4 & -1 \\
+          2 & -1 & -3 \\
+          3 & 1 &  4 
+          \end{pmatrix} \\
+        D_{14}=
+          \begin{pmatrix}
+          3 & -4 & 3 \\
+          2 & -1 & 1 \\
+          3 & 1 &  -2
+          \end{pmatrix},
+          D_{21}=
+          \begin{pmatrix}
+          3 & -1 & 1 \\
+          -1 & 1 & -3 \\
+          1 & -2 &  4
+          \end{pmatrix},
+          D_{22}=\begin{pmatrix}
+          2 & -1 & 1 \\
+          2 & 1 & -3 \\
+          3 & -2 & 4 
+          \end{pmatrix} \\
+        D_{23}=
+          \begin{pmatrix}
+          2 & 3 & 1 \\
+          2 & -1 & -3 \\
+          3 & 1 & 4 
+          \end{pmatrix},
+          D_{24}=
+          \begin{pmatrix}
+          2 & 3 & -1 \\
+          2 & -1 & 1 \\
+          3 & 1 & -2 
+          \end{pmatrix},
+          D_{31}=\begin{pmatrix}
+          3 & -1 & 1 \\
+          -4 & 3 & -1 \\
+          1 & -2 & 4 
+          \end{pmatrix} \\
+        D_{32}=
+          \begin{pmatrix}
+          2 & -1 & 1 \\
+          3 & 3 & -1 \\
+          3 & -2 & 4 
+          \end{pmatrix},
+          D_{33}=
+          \begin{pmatrix}
+          2 & 3 & 1 \\
+          3 & -4 & -1 \\
+          3 & 1 & 4 
+          \end{pmatrix},
+          D_{34}=\begin{pmatrix}
+          2 & 3 & -1 \\
+          3 & -4 & 3 \\
+          3 & 1 & -2 
+          \end{pmatrix} \\
+        D_{41}=
+          \begin{pmatrix}
+          3 & -1 & 1 \\
+          -4 & 3 & -1 \\
+          -1 & 1 & -3 
+          \end{pmatrix},
+          D_{42}=
+          \begin{pmatrix}
+          2 & -1 & 1 \\
+          3 & 3 & -1 \\
+          2 & 1 & -3 
+          \end{pmatrix},
+          D_{43}=\begin{pmatrix}
+          2 & 3 & 1 \\
+          3 & -4 & -1 \\
+          2 & -1 & -3
+          \end{pmatrix} \\
+        D_{44}=
+          \begin{pmatrix}
+          2 & 3 & -1 \\
+          3 & -4 & 3 \\
+          2 & -1 & 1 
+          \end{pmatrix} \\
+        adj(D)=
+          \begin{pmatrix}
+          10 & 6 & 20 & 14 \\ 
+          50 & 6 & -20 & -26 \\ 
+          60 & 48 & -60 & -48 \\ 
+          10 & 18 & -40 & 2
+          \end{pmatrix} \\
+        D^{-1}= \dfrac{adj(D)}{det(D)}=\dfrac{
+          \begin{pmatrix}
+            \dfrac{10}{120} & \dfrac{6}{120} & \dfrac{20}{120} & \dfrac{14}{120} \\ 
+            \dfrac{50}{120} & \dfrac{6}{120} & \dfrac{-20}{120} & \dfrac{-26}{120} \\ 
+            \dfrac{60}{120} & \dfrac{48}{120} & \dfrac{-60}{120} & \dfrac{-48}{120} \\ 
+            \dfrac{10}{120} & \dfrac{18}{120} & \dfrac{-40}{120} & \dfrac{2}{120}
+          \end{pmatrix}
+        }{120}=
+        \begin{pmatrix}
+          \dfrac{1}{12} & \dfrac{1}{20} & \dfrac{1}{6} & \dfrac{7}{60} \\ 
+          \dfrac{5}{12} & \dfrac{1}{20} & \dfrac{-1}{6} & \dfrac{-13}{60} \\ 
+          \dfrac{1}{2} & \dfrac{2}{5} & \dfrac{-1}{2} & \dfrac{-2}{5} \\  
+          \dfrac{1}{12} & \dfrac{3}{20} & \dfrac{-1}{3} & \dfrac{1}{60}
+        \end{pmatrix}
+      $
+    }
 
   
   \item  Consider the following vectors (column matrices):
