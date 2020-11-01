@@ -1233,4 +1233,131 @@
 
 \pagebreak
 
+\textbf{Problem set on first order ordinary differential equations} (40 points)
+
+\begin{enumerate}
+
+  \item {\bf The water jug} 
+  
+  A cubic box (of side L=3 m) is initially filled with water up to a height  $h$. The water flows out of the box through a circular hole cut in the bottom. The diameter of the hole is $d=0.1$ m. 
+  
+  \begin{enumerate}
+  
+    \item Derive a differential equation for $h=h(t)$ where $t$ is time. [Hint: you will need to use the Torricelli's law which expresses the velocity of the water flowing through the hole for a given height  $h$:  $v=\sqrt{2 g h}$. Here $g$ is the acceleration due to gravity.  ]
+    
+    \item solve the differential equation using $h(0)=2$ m as initial condition. 
+    
+    \item find how much time elapses until the box is completely empty, for $h(0)=2$ m. 
+    
+    \item graph (hand-drawing acceptable) the function $h(t)$. 
+  
+  \end{enumerate}
+  
+  
+  \item {\bf The leaking neutrino detector} 
+  
+  A small neutrino detector has the shape of a  cylindrical tank. The area of the base of the cylinder is $A=0.03~{\rm m^2}$ and the height is $L=1$ m. Scientists plan to fill the tank with ultrapure water, at a rate of 3 liters per minute. Due to a human error, the detector has a leak at the bottom\footnote{Neutrino detectors occasionally do leak. If you are curious, search for the history of leaks in the SuperKamiokande detector (it took many years to find it and fix it) and in the Borexino detector. }, so there will be a loss of water. Every minute, 10\% of the total volume of water present in the tank will be lost through the leak.  
+  
+  \begin{enumerate}
+  
+    \item Derive a differential equation for the volume of water in the tank, $V=V(t)$ where $t$ is time. 
+    
+    \item Setting as $t=0$ the time when water starts to be poured into the tank (which is initially empty), find the time that must pass until the level of the water in the tank is $h=0.5$ m.
+    
+    \item Establish if the tank will ever be completely full. 
+  
+  \end{enumerate}
+  
+    
+  \item {\bf Calculating the air pressure profile of a planet}
+  
+    Consider an idealized model of the Earth's atmosphere, which is in perfect thermodynamical equilibrium and free from atmospheric perturbations.  Call $y$ the altitude with respect to the Earth's surface, so that $y=0$ on the ground and $y>0$ above ground. Let $g$ be the acceleration of gravity, $M$ the mass of one mole of air, and $T$ the temperature. Assume that the  equation of state of a perfect gas ($PV=nRT$) is valid for atmospheric air. 
+  
+    Write a differential equation for the atmospheric pressure as a function of the altitude, $P=P(y)$, and solve it, for two different cases:
+  
+    \begin{enumerate}
+  
+    \item $T$ is a constant (does not depend on $y$).
+  
+    \item $T$ decreases linearly with altitude: $T(y)=T_0(1-\alpha y)$ ($\alpha>0$)
+      
+      \end{enumerate}
+      
+    {\it [Hints: consider an infinitesimal volume of air, and reason about balancing the forces due to pressure and weight. Explain your reasoning carefully. Use the equation of state of a perfect gas to express the mass density of air.  ]}
+  
+  
+  \item {\bf Nuclear decay chain}
+  
+  
+  Consider an sample of atomic nuclei, of species $X_1$. This species is unstable, and the number of nuclei that decay per unit time is proportional to the number of nuclei in the sample, $N_1$. Let the constant of proportionality be $k_1$.     
+  
+    \begin{enumerate}
+  
+    \item  write a differential equation for $N_1(t)$ and solve it, for $N_1(0)=N_0$.  In doing so, assume that $k_1>0$ and be careful in setting the signs. 
+  
+    \item Let us now consider the daughter nucleus, $X_2$, which is produced in the decay of $X_1$. $X_2$ is unstable: let $N_2$ and $k_2$ be its abundance (time-dependent) and decay constant.  Write a differential equation for $N_2(t)$ and solve it for the case where $N_2(0)=0$ and $N_1(0)=N_0$.
+  
+      \item With reference to your result for $N_2(t)$, is $N_2(t)\geq 0$ in all cases, or some extra condition on the decay constants is required to ensure that?  Comment as adequate.   
+      
+      \end{enumerate}
+  
+  \end{enumerate}
+
+  \pagebreak
+
+  \textbf{Exercises set on first order ordinary differential equations} (5 points)
+
+  \begin{enumerate}
+
+
+    \item Find the general solutions to the following inhomogeneous first-order linear differential equations by using the integrating factor method. 
+    
+    \begin{enumerate}
+      \item $y^{\prime}+3y=e^{2x}$
+      
+      \item $y^{\prime}+3y=e^{3x}$
+      
+      \item $y^{\prime}+3y=e^{-3x}$
+      
+      \item $y^{\prime}+3y=4$
+      
+      \item $y^{\prime}-y=2x^{2}$
+      
+      \item $y^{\prime}-y=\cos x$
+      
+      \item $y^{\prime}+y=\sinh x$
+      
+      \item $y^{\prime}+y=xe^{2x}$
+    \end{enumerate}
+    
+    \item Some of the following differential equations are exact; others are not.Solve those that are, and attempt to solve those that are not by finding an appropriate integrating factor.
+    
+    \begin{enumerate}
+      \item $(3x^{2}+y^{2})\,dx+2xy\,dy=0$.
+      
+      \item $\left( ye^{x}-\sin x\right) \,dx-\left( y^{2}-e^{x}\right) \,dy=0$.
+      
+      \item $y\left( 1+xy\right) \,dx+\left( 2y-x\right) \,dy=0$.
+      
+      \item $\left( e^{x}+y/x\right) \,dx+\left( \ln x+1/y\right) \,dy=0,$ $x>0$.
+      
+      \item $\left( x^{2}-y^{2}\right) \,dy-2xy\,dx=0.$
+    \end{enumerate}
+    
+    
+    \item  For each of the following equations, show that the equation is either homogeneous or isobaric (i.e., scale invariant). Find the general solution (you can leave the final antiderivative undone if it is particularly complicated, but please simplify and reduce fully up to that final step.). 
+    
+    \begin{enumerate}
+      \item $xy^{\prime }+y^{2}/x=xe^{y/x}$
+      
+      \item $\left( x^{2}+y^{2}\right) \,dy+\left( y^{2}-x^{2}\right) \,dx=0$
+      
+      \item $\left( x+y^{2}\right) \,dy+y\,dx=0$
+      
+      \item $\left( y+x^{2}\right) \,dy-x^{3}\,dx=xy \sin \left( x^{2}/y\right) \, dx$
+    \end{enumerate}
+  \end{enumerate}
+
+  \pagebreak
+
 \end{document}
