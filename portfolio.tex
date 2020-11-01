@@ -8,6 +8,7 @@
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{float}
+\usepackage{bigints} 
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{setspace}
 \usepackage{geometry}
@@ -1091,15 +1092,12 @@
     \item Consider now the function:
     %
     \begin{equation}
-    %\[
-    f\left( x\right) =\left\{ 
-    \begin{array}{rrr}
-    x+ \pi  & \, & - \pi <x<0 \\ 
-    \pi - x & \, & 0<x< \pi
-    \end{array}
-    \right. 
-    %\]
-    %
+      f\left( x\right) =\left\{ 
+      \begin{array}{rrr}
+      x+ \pi  & \, & - \pi <x<0 \\ 
+      \pi - x & \, & 0<x< \pi
+      \end{array}
+      \right. 
     \end{equation}
     Plot it, and calculate its complex Fourier series.  \\
     {\it [ Hint: Calculations can become complicated. Start by setting up the formalism in a legible way, and strategize to do the steps efficiently. Use wisely the tools you have available.  ] }
@@ -1179,17 +1177,81 @@
   $$
   graph it (good quality hand-drawn graphs are acceptable) and set up the integrals necessary to calculate the \emph{real} Fourier series. 
   
-  % Two
-  \item Continue the previous problem:  calculate the integrals and write the fully simplified result for the Fourier series. 
+    \includegraphics[width=\linewidth]{a.png}
+ 
+    \textcolor{hwColor}{
+      $f(t)=\dfrac{a_0}{2}+\sum\limits_{r=1}^{\infty}\left[a_r cos(\dfrac{2\pi r}{L}t)+b_r sin(\dfrac{2\pi r}{L}t)\right]$ 
+    } 
+
+    \textcolor{hwColor}{
+      $a_0=\dfrac{2}{L}\bigints_{x_0}^{x_0+L}f(t)dt$ \\ 
+      $a_r=\dfrac{2}{L}\bigints_{x_0}^{x_0+L}f(t) cos(\dfrac{2\pi r}{L}t)dt$ \\ 
+      $b_r=\dfrac{2}{L}\bigints_{x_0}^{x_0+L}f(t) sin(\dfrac{2\pi r}{L}t)dt$ \\ 
+    }
+
+    \textcolor{hwColor}{ 
+      \rule{15cm}{0.4pt}
+    }
+
+    \textcolor{hwColor}{ 
+      L=2 \\ 
+      $a_0=\dfrac{2}{2}\bigints_{-1}^{1}3sin(\dfrac{\pi t}{3})dt=3 \bigints_{-1}^{1}sin(\dfrac{\pi t}{3})dt$ \\
+    }
+
+    \textcolor{hwColor}{
+      $a_r=\dfrac{2}{2}\bigints_{-1}^{1}3sin(\dfrac{\pi t}{3}) cos(\dfrac{2\pi rt}{2})dt=3\bigints_{-1}^{1}sin(\dfrac{\pi t}{3}) cos(\pi rt)dt$ \\ 
+    } 
+
+    \textcolor{hwColor}{
+      $b_r=\dfrac{2}{2}\bigints_{-1}^{1}3sin(\dfrac{\pi t}{3}) sin(\dfrac{2\pi r}{2}t)dt=3\bigints_{-1}^{1}sin(\dfrac{\pi t}{3}) sin(\pi rt)dt$ \\ 
+    }
+
+    \textcolor{hwColor}{
+      $f(t)=\dfrac{3 \bigints_{-1}^{1}sin(\dfrac{\pi t}{3})}{2}$ \\
+      $+\sum\limits_{r=1}^{\infty}\left[\left(3\bigints_{-1}^{1}sin(\dfrac{\pi t}{3}) cos(\pi rt)dt\right) cos(\pi rt)+\left(3\bigints_{-1}^{1}sin(\dfrac{\pi t}{3}) sin(\pi rt)dt\right) sin(\pi rt)\right]$
+    }
+    
+
+
+  \item Continue the previous problem:  calculate the integrals and write the fully simplified result for the Fourier series.
+
+    \textcolor{hwColor}{
+      $a_0=\dfrac{2}{2}\bigints_{-1}^{1}3sin(\dfrac{\pi t}{3})dt=3 \bigints_{-1}^{1}sin(\dfrac{\pi t}{3})dt=3\left(-\dfrac{3}{\pi}cos(\dfrac{\pi}{3}t)\right)\Big|_{-1}^{1}$ \\
+      $=3\left[-\dfrac{3}{\pi}cos(\dfrac{\pi}{3})+\dfrac{3}{\pi}cos(-\dfrac{\pi}{3})\right]=3 \times 0 \Longrightarrow a_0=0$
+    }
+
+    \bigbreak
+
+    \textcolor{hwColor}{
+      $a_r=3\bigints_{-1}^{1}sin(\dfrac{\pi t}{3}) cos(\pi rt)dt=\dfrac{3}{2}\bigints_{-1}^{1}\left[sin(\dfrac{\pi +3\pi r}{3}t)+sin(\dfrac{\pi - 3\pi r}{3}t)\right]dt$ \\
+      $=\dfrac{3}{2}\left[\bigints_{-1}^{1}sin(\dfrac{\pi +3\pi r}{3}t) dt+\bigints_{-1}^{1}sin(\dfrac{\pi - 3\pi r}{3}t) dt\right]$ \\
+      $=\dfrac{3}{2} \left[-\dfrac{3}{\pi + 3\pi r}cos(\dfrac{\pi + 3\pi r}{3}t)\Big|_{-1}^{1}-\dfrac{3}{\pi -3\pi r}cos(\dfrac{\pi -3\pi r}{3}t)\Big|_{-1}^{1}\right]$ \\
+      $\Longrightarrow a_r=0$
+    }
+
+    \bigbreak
   
+    \textcolor{hwColor}{
+      $b_r=3\bigints_{-1}^{1}sin(\dfrac{\pi t}{3}) sin(\pi rt)dt=-\dfrac{3}{2}\left[\bigints_{-1}^{1} cos(\dfrac{\pi + 3\pi r}{3}t)dt-\bigints_{-1}^{1}cos(\dfrac{\pi - 3\pi r}{3}t)dt\right]$ \\
+      $=-\dfrac{3}{2}\left[\dfrac{3}{\pi + 3\pi r}sin(\dfrac{\pi + 3\pi r}{3}t)\Big|_{-1}^{1}+\dfrac{3}{\pi - 3\pi r}sin(\dfrac{\pi - 3\pi r}{3}t)\Big|_{-1}^{1}\right]$ \\
+      $=-\dfrac{3}{2} \left[\dfrac{6}{\pi + 3\pi r}sin(\dfrac{\pi + 3\pi r}{3})+\dfrac{6}{\pi - 3\pi r}sin(\dfrac{\pi - 3\pi r}{3})\right]$ \\
+      $=-\dfrac{3}{2}\left[\left(\dfrac{6}{\pi + 3\pi r}\dfrac{\sqrt{3}}{2}(-1)^r\right)+\left(\dfrac{6}{\pi - 3\pi r}\dfrac{\sqrt{3}}{2}(-1)^r\right)\right]$ \\
+      $=-\dfrac{9\sqrt{3}}{2}(-1)^r\left[\dfrac{2\pi}{(\pi +3\pi r)(\pi - 3\pi r)}\right]$ \\
+      \\
+      $\Longrightarrow b_r=-\dfrac{9\sqrt{3}(-1)^r}{\pi - 9\pi r^2}$
+    }
+
+    \bigbreak
+
+    \textcolor{hwColor}{
+      $f(t)=\sum\limits_{r=1}^{\infty} -\dfrac{9\sqrt{3}(-1)^r}{\pi - 9\pi r^2} sin(\pi rt)$
+    }
   
-  % Three
   \item Consider the following periodic function, defined over one period as given: 
   $$
   f\left( t\right) =t\left( 1-t\right) ,\;0<t<1
   $$
   graph it (good quality hand-drawn graphs are acceptable) and set up the integrals necessary to calculate the \emph{real} Fourier series. 
-  
   
   \item Continue the previous problem:  calculate the integrals and write the fully simplified result for the Fourier series. 
   
