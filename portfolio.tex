@@ -811,8 +811,6 @@
         $
       }
 
-
-
     If the column matrix $\mathsf{b}$ on the right is changed to 
     \[
       \mathsf{b}
@@ -827,8 +825,50 @@
       \right),
     \]
     and $\mathsf{M}$ is unchanged, what is the new solution $\mathsf{v}$?
-  
-  
+
+    \textcolor{hwColor}{
+      $
+        v=M^{-1}b \\
+        \\
+        =\begin{pmatrix}
+          -\dfrac{1}{2} & \dfrac{1}{2} & 0 & 0 \\
+          \\
+          -\dfrac{1}{2} & -\dfrac{13}{6} & \dfrac{2}{3} & \dfrac{5}{3} \\
+          \\
+          \dfrac{1}{2} & \dfrac{11}{6} & -\dfrac{1}{3} & -\dfrac{4}{3} \\
+          \\ 
+          \dfrac{1}{2} & -\dfrac{3}{2} & 0 & 1 \\ 
+        \end{pmatrix}.\begin{pmatrix}
+          1 \\
+          1 \\
+          1 \\
+          1 \\
+        \end{pmatrix}
+      $
+    }
+
+    \textcolor{hwColor}{
+      $
+        =\begin{pmatrix}
+          -\dfrac{1}{2}+\dfrac{1}{2}+0+0 \\
+          -\dfrac{1}{2}+\dfrac{-13}{6}+\dfrac{2}{3}+\dfrac{5}{3} \\
+          \dfrac{1}{2}+\dfrac{11}{6}+\dfrac{-1}{3}+\dfrac{-4}{3} \\
+          \dfrac{1}{2}+\dfrac{-3}{2}+0+1 \\
+        \end{pmatrix}
+        \Longrightarrow \begin{pmatrix}
+          x \\
+          y \\
+          z \\
+          t \\
+        \end{pmatrix}=\begin{pmatrix}
+          0 \\
+          -\dfrac{1}{3} \\
+          \dfrac{2}{3} \\
+          0 \\
+        \end{pmatrix}
+      $
+    }
+    
   \item Consider the matrix:
     $$
     A=\left(
