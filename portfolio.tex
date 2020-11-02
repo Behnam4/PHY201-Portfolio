@@ -1303,7 +1303,16 @@
     \bigbreak
 
     \textcolor{hwColor}{
-      $b_r=2\bigints_{0}^{1}t(1-t) sin(2\pi rt)dt$ \\
+      $b_r=2\bigints_{0}^{1}t(1-t) sin(2\pi rt)dt$ \\ 
+      $=2\left[-\dfrac{(t-t^2)cos(2\pi rt)}{2 \pi r}+ \bigints \dfrac{1}{2\pi r}cos(2 \pi rt)(1-2t)dt\right]$ \\
+      $=2\left[-\dfrac{(t-t^2)cos(2\pi rt)}{2 \pi r}+\left(\dfrac{(1-2t)sin(2\pi rt)}{2 \pi r}-\bigints -2\dfrac{sin(2\pi rt)}{2 \pi r}dt\right)\right]$ \\
+      $=2\left[-\dfrac{(t-t^2) cos(2 \pi rt)}{2 \pi r}+\dfrac{(1-2t)sin(2 \pi rt)}{2 \pi r}-\dfrac{cos(2 \pi rt)}{2 \pi^2 r^2}\right]$ \\
+      $=\left[-\dfrac{(t-t^2) cos(2 \pi rt)}{\pi r}+\dfrac{(1-2t)sin(2 \pi rt)}{\pi r}-\dfrac{cos(2 \pi rt)}{\pi^2 r^2}\right]\Big|_{0}^{1}$ \\
+      $=-\dfrac{sin(2\pi r)}{\pi r}-\dfrac{cos(2 \pi r)}{\pi^2 r^2}-\dfrac{1}{\pi^2 r^2}$ \\
+      Because $r=1,2,3,...$ $sin(2 \pi r)=0$ and $cos(2 \pi r)=1$ \\
+      $=-\dfrac{1}{\pi^2 r^2}-\dfrac{1}{\pi^2 r^2}$ \\
+      \\
+      $\Longrightarrow b_r=-\dfrac{2}{\pi^2 r^2}$
     }
   
   \item Consider the following periodic function, defined over one period as given: 
