@@ -2098,6 +2098,37 @@
         }
       
       \item $\ddot{y}-\dot{y}-6y=0;\;y\left( 1\right) =4,\;\dot{y}\left( 1\right)=7$
+
+        \textcolor{hwColor}{
+          $
+            \ddot{y}-\dot{y}-6y=0 \rightarrow \lambda^2-\lambda-6=0 \rightarrow \begin{cases}
+              \lambda_1=-2 \\
+              \lambda_2=3
+            \end{cases} \\
+            \\
+            y(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^{-2x}+c_2e^{3x}
+            \\
+            y(1)=4 \rightarrow y(1)=c_1e^{-2}+c_2e^{3}=4 ~~~~ (A) \\
+            \\
+            \dfrac{dy}{dx}=-2c_1 e^{-2x}+3c_2e^{3x} \\
+            \\
+            \dot{y}(1)=7 \rightarrow \dot{y}(1)=-2c_1 e^{-2}+3c_2e^{3}=7 ~~~~ (B) \\
+          $
+        }
+
+        \textcolor{hwColor}{
+          From (A) and (B) 
+          $
+            \begin{cases}
+              c_1=e^2 \\
+              c_2=3e^{-3}
+            \end{cases} \\
+            \\
+            y(x)=e^2e^{-2x}+3e^{-3}e^{3x} \\
+            \Longrightarrow y(x)=e^{2(1-x)}+3e^{3(x-1)}
+          $
+        }
+
       \end{enumerate}
     
     
