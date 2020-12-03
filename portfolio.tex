@@ -2040,7 +2040,7 @@
 
         \textcolor{hwColor}{
           $
-          y^{\prime \prime }-9y=0 \rightarrow \lambda^2-9=0 \rightarrow \begin{cases}
+            y^{\prime \prime }-9y=0 \rightarrow \lambda^2-9=0 \rightarrow \begin{cases}
               \lambda_1=3 \\
               \lambda_2=-3
             \end{cases} \\
@@ -2067,6 +2067,35 @@
       
       \item $y^{\prime \prime }+2y^{\prime }-3y=0;\;y\left( 0\right)
       =0,\;y^{\prime }\left( 0\right) =-2$
+
+        \textcolor{hwColor}{
+          $
+            y^{\prime \prime }+2y^{\prime }-3y=0 \rightarrow \lambda^2+2\lambda-3=0 \rightarrow \begin{cases}
+              \lambda_1=1 \\
+              \lambda_2=-3
+            \end{cases} \\
+            \\
+            y(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^x+c_2e^{-3x} \\
+            \\
+            y(0)=0 \rightarrow y(0)=c_1e^0+c_2e^0=0 \rightarrow c_1+c_2=0 ~~~~ (A) \\
+            \\
+            \dfrac{dy}{dx}=c_1 e^x-3c_2e^{-3x} \\
+            \\
+            y^{\prime }(0)=-2 \rightarrow y^{\prime }(0)=c_1 e^0-3c_2e^0=-2 \rightarrow c_1-3c_2=-2 ~~~~ (B)
+          $
+        }
+
+        \textcolor{hwColor}{
+          From (A) and (B) 
+          $
+            \begin{cases}
+              c_1=-\dfrac{1}{2} \\
+              c_2=\dfrac{1}{2}
+            \end{cases} \\
+            \\
+            \Longrightarrow y(x)=-\dfrac{1}{2}e^x+\dfrac{1}{2}e^{-3x}=\dfrac{1}{2}(e^{-3x}-e^x)
+          $
+        }
       
       \item $\ddot{y}-\dot{y}-6y=0;\;y\left( 1\right) =4,\;\dot{y}\left( 1\right)=7$
       \end{enumerate}
