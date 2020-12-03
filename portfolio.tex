@@ -1966,7 +1966,40 @@
       
       \item $y^{\prime \prime }+3y^{\prime }-2y=0;\;y\left( 0\right)
       =2,\;y^{\prime }\left( 0\right) =-3$
-      
+
+        \textcolor{hwColor}{
+          $
+            \ddot{y}+3\dot{y}-2y=0 \rightarrow \lambda^2+3\lambda-2=0 \rightarrow \begin{cases}
+              \lambda_1=\dfrac{-3+\sqrt{17}}{2} \\
+              \lambda_2=\dfrac{-3-\sqrt{17}}{2}
+            \end{cases} \\
+            \\
+            y(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^{(\dfrac{-3+\sqrt{17}}{2}) x}+c_2e^{(\dfrac{-3-\sqrt{17}}{2}) x} \\
+            \\
+            y(0)=c_1e^0+c_2e^0=2 \rightarrow c_1+c_2=2 ~~~~ (A) \\
+            \\
+            \dfrac{dy}{dx}=c_1(\dfrac{-3+\sqrt{17}}{2})e^{(\dfrac{-3+\sqrt{17}}{2}) x}+c_2(\dfrac{-3-\sqrt{17}}{2})e^{(\dfrac{-3-\sqrt{17}}{2}) x} \\
+            \\
+            \dot{y}(0)=c_1(\dfrac{-3+\sqrt{17}}{2})e^0+c_2(\dfrac{-3-\sqrt{17}}{2})e^0=-3 \\
+            c_1(\dfrac{-3+\sqrt{17}}{2})+c_2(\dfrac{-3-\sqrt{17}}{2})=-3 ~~~~ (B)
+          $   
+        }
+
+        \textcolor{hwColor}{
+          $
+            \begin{cases}
+              c_1+c_2=2 \\
+              c_1(\dfrac{-3+\sqrt{17}}{2})+c_2(\dfrac{-3-\sqrt{17}}{2})=-3
+            \end{cases} \Longrightarrow \begin{cases}
+              c_1=-1 \\
+              c_2=-1
+            \end{cases}\\
+            \\
+            y(x)=c_1e^{(\dfrac{-3+\sqrt{17}}{2}) x}+c_2e^{(\dfrac{-3-\sqrt{17}}{2}) x} \\
+            y(x)=-e^{(\dfrac{-3+\sqrt{17}}{2}) x}-e^{(\dfrac{-3-\sqrt{17}}{2}) x}
+          $   
+        }
+        
       \item $\ddot{y}+9y=0;\;y\left( 0\right) =1,\;y\left( 1\right) =0$
       
       \item $y^{\prime \prime }-9y=0;\;y\left( 0\right) =0,\;y\left( 1\right) =2$
