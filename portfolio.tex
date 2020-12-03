@@ -1877,7 +1877,56 @@
       \begin{enumerate}
       \item $\ddot{y}-6\dot{y}+9y=0;\;y\left( -1\right) =1,\;\dot{y}\left(
       -1\right) =7$
-      
+
+      \textcolor{hwColor}{ 
+        $ 
+          \ddot{y}-6\dot{y}+9y=0 \rightarrow \lambda^2-6\lambda+9=0 \rightarrow \lambda=3 \\
+        $ We have repeated roots so we only have one value of $\lambda$ out of our auxiliary equation.
+        We can still determine our solution using the strategy outlined on page 493. \\
+        Thus, the general solution is: \\
+        $
+          y(x)=(c_1+c_2x)e^{\lambda x} \longrightarrow y(x)=(c_1+c_2x)e^{3x}
+        $
+      }
+
+      \textcolor{hwColor}{ 
+        Applying the given condition: \\
+        $
+          y(-1)=1 \rightarrow y(-1)=(c_1-c_2)e^{-3}=1 ~~~~ (A) \\
+          \\
+          \dfrac{dy}{dx}=\dfrac{d}{dx}(c_1+c_2x)e^{3x}+\dfrac{d}{dx}(e^{3x})(c_1+c_2x)=c_2e^{3x}+3e^{3x}(c_1+c_2x)\\
+          \dot{y}(-1)=7 \rightarrow \dot{y}(-1)=c_2e^{-3}+3e^{-3}(c_1-c_2)=7 \\
+          \longrightarrow 3e^{-3}c_1-2e^{-3}c_2=7 ~~~~ (B) \\
+        $
+      }
+
+      \textcolor{hwColor}{
+        From (A) and (B)
+        $
+        \begin{cases}
+          e^{-3}c_1-e^{-3}c_2=1 \\
+          3e^{-3}c_1-2e^{-3}c_2=7
+        \end{cases} \\
+        c_1=\dfrac{\begin{vmatrix}
+          1 & -e^{-3} \\
+          7 & -2e^{-3}
+        \end{vmatrix}}{\begin{vmatrix}
+          e^{-3} & -e^{-3} \\
+          3e^{-3} & -2e^{-3}
+        \end{vmatrix}}=5e^3 ~~~~
+        c_2=\dfrac{\begin{vmatrix}
+          e^{-3} & 1 \\
+          3e^{-3} & 7
+        \end{vmatrix}}{\begin{vmatrix}
+          e^{-3} & -e^{-3} \\
+          3e^{-3} & -2e^{-3}
+        \end{vmatrix}}=4e^3 \\
+        \\
+        y(x)=(5e^3+4xe^3)e^{3x} \\
+        \Longrightarrow y(x)=(5+4x)e^{3(x+1)}
+        $
+      }
+
       \item $\ddot{y}-2\dot{y}-5y=0;\;y\left( 0\right) =0,\;\dot{y}\left(
       0\right) =3$
       
@@ -1938,7 +1987,7 @@
 
 
   \textbf{Problem set on partial differential equations} (40 points)
-  % Start
+
   \begin{enumerate}
 
     \item A musician plucks a guitar string that is under tension $T$ and has constant linear mass density $\mu$. The motion is initiated by displacing the string a small distance $h$ sideways at a point that is one-quarter of the way along the string length $L$ to form a triangle (see figure below). The guitarist then lets go to sound the note. \\
@@ -1995,8 +2044,7 @@
     \frac{\partial \Theta}{\partial x}\bigg|_{x=0}=0~, ~~~~~~~~~
     \frac{\partial \Theta}{\partial x}\bigg|_{x=a}=0~, 
     $$
-    %
-    %??  = ??  =0. (40) ?x  x=0 ?x  x=a
+
     We also specify the conditions at $y = 0$ and $y = b$ as
     $\Theta(x,0) = 0$, $\Theta(x,b) = f(x)$.
       \begin{enumerate}
@@ -2006,8 +2054,6 @@
       
       \end{enumerate}
     
-    \end{enumerate}
-    
-  % End 
+  \end{enumerate}
 
 \end{document}
