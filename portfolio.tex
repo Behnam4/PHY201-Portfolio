@@ -2000,14 +2000,48 @@
           $   
         }
         
-      \item $\ddot{y}+9y=0;\;y\left( 0\right) =1,\;y\left( 1\right) =0$
+      \item $\ddot{y}+9y=0;\;y\left( 0\right) =1,\;y\left( 1\right)=0$
+
+        \textcolor{hwColor}{
+          $
+            \ddot{y}+9y=0 \rightarrow \lambda^2+9=0 \rightarrow \begin{cases}
+              \lambda_1=3i \\
+              \lambda_2=-3i
+            \end{cases} \\
+            \\
+            y(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^{3i x}+c_2e^{-3i x} \\
+            =c_1\left[cos(3x)+isin(3x)\right]+c_2\left[cos(-3x)+isin(-3x)\right] \\
+            =(c_1+c_2)cos(3x)+i(c_1-c_2)sin(3x)
+            \\
+          $
+          We can redefine $c_1+c_2=w$ and $i(c_1-c_2)=h$  \\
+          $
+            \Rightarrow y(x)=wcos(3x)+hsin(3x)
+          $
+        }
+
+        \textcolor{hwColor}{
+          $
+            \begin{cases}
+              y(0)=1 \rightarrow y(0)=wcos(0)+hsin(0)=1 \Rightarrow w=1 \\
+              y(1)=0 \rightarrow y(1)=wcos(3)+hsin(3)=0
+            \end{cases} \\
+          $
+          Since we already found the value of $w$, plugging it into thes second equation gives us: \\
+          $
+          cos(3)+hsin(3)=0 \Rightarrow hsin(3)=-cos(3) \\
+          \Rightarrow h=-\dfrac{cos(3)}{sin(3)}=-cot(3) \\
+          \\
+          \Longrightarrow y(x)=cos(3x)-cot(3)sin(3x)
+          $
+        }
       
-      \item $y^{\prime \prime }-9y=0;\;y\left( 0\right) =0,\;y\left( 1\right) =2$
+      \item $y^{\prime \prime }-9y=0;\;y\left( 0\right) =0,\;y\left( 1\right)=2$
       
       \item $y^{\prime \prime }+2y^{\prime }-3y=0;\;y\left( 0\right)
       =0,\;y^{\prime }\left( 0\right) =-2$
       
-      \item $\ddot{y}-\dot{y}-6y=0;\;y\left( 1\right) =4,\;\dot{y}\left( 1\right) =7$
+      \item $\ddot{y}-\dot{y}-6y=0;\;y\left( 1\right) =4,\;\dot{y}\left( 1\right)=7$
       \end{enumerate}
     
     
