@@ -2234,7 +2234,33 @@
               \lambda_2=-3
             \end{cases} \\
             \\
-            y_c(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^{-x}+c_2e^{-3 x}
+            y_c(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^{-x}+c_2e^{-3 x} \\
+          $
+        }
+
+        \textcolor{hwColor}{
+          $
+            y_p(x)=Ae^x \rightarrow \dfrac{dy_p}{dx}=Ae^x, ~~~~~~ \dfrac{d^2(y_p)}{dx^2}=Ae^x \\
+            \\
+            Ae^x+4Ae^x+3Ae^x=4e^x \rightarrow A=\dfrac{1}{2} \\
+            \\
+            y(x)=y_c(x)+y_p(x)=c_1e^{-x}+c_2e^{-3 x}+\dfrac{1}{2}e^x \\
+            \\
+            \dfrac{dy}{dx}=-c_1e^{-x}-3c_2e^{-3 x}+\dfrac{1}{2}e^x \\
+            \\
+            \begin{cases}
+              y(0)=0 \rightarrow y(0)=c_1+c_2+\dfrac{1}{2}=0\\
+              \\
+              y^{\prime }(0)=2 \rightarrow  y^{\prime }(0)=-c_1-3c_2+\dfrac{1}{2}=2
+            \end{cases} \\
+            \\
+            \begin{cases}
+              c_1+c_2=-\dfrac{1}{2} \\
+              -c_1-3c_2=\dfrac{3}{2}
+            \end{cases} \Longrightarrow c_1=0, ~~~ c_2=-\dfrac{1}{2} \\
+            \\
+            \\
+            y(x)=-\dfrac{1}{2}e^{-3 x}+\dfrac{1}{2}e^x
           $
         }
 
@@ -2252,7 +2278,31 @@
           $
           Now we have repeated roots.Thus, our complementary equation is: \\
           $ 
-            y_c(x)=(c_1+c_2 x)e^{\lambda x}=(c_1+c_2 x)e^{2x}
+            y_c(x)=(c_1+c_2 x)e^{\lambda x}=(c_1+c_2 x)e^{2x} \\
+          $
+        }
+        
+        \textcolor{hwColor}{
+          $
+            y_p(x)=x^2Ae^{2x} \\ 
+            \dfrac{dy_p}{dx}=2xAe^{2x}+2x^2Ae^{2x} \\
+            \dfrac{d^2(y_p)}{dx^2}=2Ae^{2x}+4xAe^{2x}+4xAe^{2x}+4x^2Ae^{2x} \\
+            \\
+            \\
+            2Ae^{2x}+4xAe^{2x}+4xAe^{2x}+4x^2Ae^{2x}-4(2xAe^{2x}+2x^2Ae^{2x})+4(x^2Ae^{2x})=e^{2x} \\
+            \rightarrow 2Ae^{2x}=e^{2x} \\
+            \Longrightarrow A=\dfrac{1}{2}\\
+            \\
+            y(x)=y_c(x)+y_p(x)=(c_1+c_2 x)e^{2x}+\dfrac{1}{2}x^2e^{2x} \\
+            \\
+            \dfrac{dy}{dx}=2c_1e^{2x}+c_2e^{2x}+2c_2xe^{2x}+xe^{2x}+x^2e^{2x} \\
+            \\
+            \begin{cases}
+              y(0)=0 \rightarrow y(0)=c_1=0  \\
+              y^{\prime }(0)=\dfrac{1}{2} \rightarrow y^{\prime }(0)=c_2=\dfrac{1}{2}
+            \end{cases} \\
+            \\
+            \Longrightarrow  y(x)=\dfrac{1}{2}xe^{2x}+\dfrac{1}{2}x^2e^{2x}
           $
         }
 
@@ -2271,7 +2321,7 @@
               \lambda_2=-3
             \end{cases} \\
             \\
-            y_c(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^{-2x}+c_2e^{-3x}
+            y_c(x)=c_1e^{\lambda_1 x}+c_2e^{\lambda_2 x}=c_1e^{-2x}+c_2e^{-3x} \\
           $
         }
 
@@ -2292,7 +2342,7 @@
           $
           By using the equation 15.12.  \\
           $
-            y_c(x)=e^{\alpha x}\left[d_1 cos(\beta x)+d_2 sin(\beta x)\right]=e^{-x}\left[d_1 cos(2x)+d_2 sin(2x)\right]
+            y_c(x)=e^{\alpha x}\left[d_1 cos(\beta x)+d_2 sin(\beta x)\right]=e^{-x}\left[d_1 cos(2x)+d_2 sin(2x)\right] \\
           $
         }
 
@@ -2308,7 +2358,7 @@
             \\
             \lambda^2-6\lambda+9=0 \rightarrow \lambda=3
             \\
-            y_c(x)=(c_1+c_2 x)e^{\lambda x}=(c_1+c_2 x)e^{3x}
+            y_c(x)=(c_1+c_2 x)e^{\lambda x}=(c_1+c_2 x)e^{3x} \\
           $
         }
 
